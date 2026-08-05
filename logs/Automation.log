@@ -62,3 +62,12 @@
 2026-08-04 19:06:38 [main] INFO  AccountRegisteration - *****Starting Registration Process*******
 2026-08-04 19:06:42 [main] INFO  AccountRegisteration - Verify Resgistration URL 
 2026-08-04 19:07:08 [main] INFO  MyLoginTest - Login Test Start
+2026-08-04 20:46:16 [main] INFO  AccountRegisteration - *****Starting Registration Process*******
+2026-08-04 20:46:17 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-08-04 20:46:35 [main] INFO  MyLoginTest - Login Test Start
+2026-08-05 17:56:02 [main] INFO  AccountRegisteration - *****Starting Registration Process*******
+2026-08-05 17:56:03 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-08-05 17:56:28 [main] INFO  MyLoginTest - Login Test Start
+2026-08-05 17:59:00 [main] INFO  AccountRegisteration - *****Starting Registration Process*******
+2026-08-05 17:59:01 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-08-05 17:59:21 [main] INFO  MyLoginTest - Login Test Start
