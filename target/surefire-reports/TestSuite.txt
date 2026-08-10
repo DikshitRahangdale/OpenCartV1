@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 84.34 s <<< FAILURE! -- in TestSuite
-testCases.AccountRegisteration.registeration -- Time elapsed: 12.44 s <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 119.3 s <<< FAILURE! -- in TestSuite
+testCases.AccountRegisteration.registeration -- Time elapsed: 13.37 s <<< FAILURE!
 java.lang.AssertionError: 
 Account is not Created or Success Message does not match expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']"}
-  (Session info: chrome=151.0.7922.75)
+  (Session info: chrome=151.0.7922.108)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.43.0', revision: 'dd0f534'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc50cec50ed762c247ed5f359fe5364c, findElement {value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.75, chrome: {chromedriverVersion: 151.0.7922.76 (031bfd60f544..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57935}, goog:processID: 2572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57935/devtoo..., se:cdpVersion: 151.0.7922.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc50cec50ed762c247ed5f359fe5364c]
+Command: [fb9a6d3b22368e1e863530c7028de1b3, findElement {using=xpath, value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55799}, goog:processID: 14840, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55799/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fb9a6d3b22368e1e863530c7028de1b3]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)

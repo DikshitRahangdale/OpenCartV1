@@ -77,3 +77,6 @@
 2026-08-05 19:13:46 [main] INFO  AccountRegisteration - *****Starting Registration Process*******
 2026-08-05 19:13:46 [main] INFO  AccountRegisteration - Verify Resgistration URL 
 2026-08-05 19:14:01 [main] INFO  MyLoginTest - Login Test Start
+2026-08-10 18:21:13 [main] INFO  AccountRegisteration - *****Starting Registration Process*******
+2026-08-10 18:21:14 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-08-10 18:21:31 [main] INFO  MyLoginTest - Login Test Start
