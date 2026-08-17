@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-15T19:29:31 IST" name="Suite" finished-at="2026-08-15T19:31:31 IST" duration-ms="120217">
+  <suite started-at="2026-08-16T19:53:03 IST" name="Suite" finished-at="2026-08-16T19:54:46 IST" duration-ms="103354">
     <groups>
       <group name="Sanity">
         <method signature="AccountRegisteration.registeration()[pri:0, instance:testCases.AccountRegisteration@38425407]" name="registeration" class="testCases.AccountRegisteration"/>
@@ -16,9 +16,9 @@
         <method signature="MyLoginTest.veryLogin()[pri:0, instance:testCases.MyLoginTest@6025e1b6]" name="veryLogin" class="testCases.MyLoginTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-08-15T19:29:31 IST" name="Test" finished-at="2026-08-15T19:31:31 IST" duration-ms="120217">
+    <test started-at="2026-08-16T19:53:03 IST" name="Test" finished-at="2026-08-16T19:54:46 IST" duration-ms="103354">
       <class name="testCases.AccountRegisteration">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountRegisteration@38425407]" started-at="2026-08-15T19:29:32 IST" name="driversetup" finished-at="2026-08-15T19:29:52 IST" duration-ms="20552" status="PASS">
+        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountRegisteration@38425407]" started-at="2026-08-16T19:53:03 IST" name="driversetup" finished-at="2026-08-16T19:53:21 IST" duration-ms="17816" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetup -->
-        <test-method signature="registeration()[pri:0, instance:testCases.AccountRegisteration@38425407]" started-at="2026-08-15T19:29:52 IST" name="registeration" finished-at="2026-08-15T19:30:06 IST" duration-ms="13867" status="FAIL">
+        <test-method signature="registeration()[pri:0, instance:testCases.AccountRegisteration@38425407]" started-at="2026-08-16T19:53:21 IST" name="registeration" finished-at="2026-08-16T19:53:34 IST" duration-ms="12694" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Account is not Created or Success Message does not match expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']"}
@@ -43,9 +43,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.43.0', revision: 'dd0f534'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b8e89c4b3f5966ade2d392e7cd89eaeb, findElement {using=xpath, value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50674}, goog:processID: 128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50674/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b8e89c4b3f5966ade2d392e7cd89eaeb]]]>
+Command: [10b5e215acb92fdfd368ec7187c22327, findElement {using=xpath, value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51889}, goog:processID: 9008, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51889/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10b5e215acb92fdfd368ec7187c22327]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Account is not Created or Success Message does not match expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']"}
@@ -54,9 +54,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.43.0', revision: 'dd0f534'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b8e89c4b3f5966ade2d392e7cd89eaeb, findElement {using=xpath, value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50674}, goog:processID: 128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50674/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b8e89c4b3f5966ade2d392e7cd89eaeb]
+Command: [10b5e215acb92fdfd368ec7187c22327, findElement {using=xpath, value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51889}, goog:processID: 9008, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51889/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10b5e215acb92fdfd368ec7187c22327]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -99,13 +99,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeration -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.AccountRegisteration@38425407]" started-at="2026-08-15T19:30:06 IST" name="closeDriver" finished-at="2026-08-15T19:30:07 IST" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.AccountRegisteration@38425407]" started-at="2026-08-16T19:53:34 IST" name="closeDriver" finished-at="2026-08-16T19:53:35 IST" duration-ms="481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testCases.AccountRegisteration -->
       <class name="testCases.LoginDataDrivenTest">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:30:19 IST" name="driversetup" finished-at="2026-08-15T19:30:26 IST" duration-ms="6784" status="PASS">
+        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:53:42 IST" name="driversetup" finished-at="2026-08-16T19:53:46 IST" duration-ms="4079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetup -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:30:26 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-15T19:30:40 IST" duration-ms="14126" status="PASS">
+        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:53:46 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-16T19:53:58 IST" duration-ms="12260" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,7 +142,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:30:40 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-15T19:30:53 IST" duration-ms="13140" status="PASS">
+        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:53:58 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-16T19:54:11 IST" duration-ms="12662" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,7 +163,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:30:53 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-15T19:31:06 IST" duration-ms="13069" status="PASS">
+        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:54:11 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-16T19:54:23 IST" duration-ms="12171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,7 +184,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:31:06 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-15T19:31:09 IST" duration-ms="2710" status="PASS">
+        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:54:23 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-16T19:54:25 IST" duration-ms="2245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:31:09 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-15T19:31:20 IST" duration-ms="10735" status="PASS">
+        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:54:25 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-16T19:54:35 IST" duration-ms="10541" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -226,7 +226,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:31:20 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-15T19:31:31 IST" duration-ms="10880" status="PASS">
+        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:54:35 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-16T19:54:46 IST" duration-ms="10691" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,13 +247,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwithMultipledata -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-15T19:31:31 IST" name="closeDriver" finished-at="2026-08-15T19:31:31 IST" duration-ms="505" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.LoginDataDrivenTest@22ff4249]" started-at="2026-08-16T19:54:46 IST" name="closeDriver" finished-at="2026-08-16T19:54:46 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testCases.LoginDataDrivenTest -->
       <class name="testCases.MyLoginTest">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.MyLoginTest@6025e1b6]" started-at="2026-08-15T19:30:07 IST" name="driversetup" finished-at="2026-08-15T19:30:15 IST" duration-ms="8019" status="PASS">
+        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.MyLoginTest@6025e1b6]" started-at="2026-08-16T19:53:35 IST" name="driversetup" finished-at="2026-08-16T19:53:39 IST" duration-ms="3994" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -269,11 +269,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetup -->
-        <test-method signature="veryLogin()[pri:0, instance:testCases.MyLoginTest@6025e1b6]" started-at="2026-08-15T19:30:15 IST" name="veryLogin" finished-at="2026-08-15T19:30:18 IST" duration-ms="3413" status="PASS">
+        <test-method signature="veryLogin()[pri:0, instance:testCases.MyLoginTest@6025e1b6]" started-at="2026-08-16T19:53:39 IST" name="veryLogin" finished-at="2026-08-16T19:53:41 IST" duration-ms="2442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- veryLogin -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.MyLoginTest@6025e1b6]" started-at="2026-08-15T19:30:18 IST" name="closeDriver" finished-at="2026-08-15T19:30:19 IST" duration-ms="1059" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.MyLoginTest@6025e1b6]" started-at="2026-08-16T19:53:41 IST" name="closeDriver" finished-at="2026-08-16T19:53:42 IST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

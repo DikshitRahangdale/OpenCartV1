@@ -25,8 +25,8 @@ public class AccountRegisteration extends DriverSetup {
 		RegistrationPage register = new RegistrationPage(driver);
 		register.enterFirstName("Test");
 		register.enterLastName("Accsount");
-		register.enterEmail("estisfkjjdsng@gmail.com");
-		register.enterTephoneNumber("8789882778");
+		register.enterEmail("estisfsdfkjjdsng@gmail.com");
+		register.enterTephoneNumber("8789582778");
 		register.enterPassword("Tedsss@2345");
 		register.enterCnfrmPassword("Tedsss@2345");
 		register.newsLetterYes();
