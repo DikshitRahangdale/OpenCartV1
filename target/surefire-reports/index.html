@@ -174,14 +174,14 @@
                   </a> <!-- registeration -->
                   <span class="method-name">registeration</span>
                   <div class="stack-trace">java.lang.AssertionError: Account is not Created or Success Message does not match expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]/*[normalize-space()=&apos;Your Account Has Been Created!&apos;]&quot;}
-  (Session info: chrome=151.0.7922.138)
+  (Session info: chrome=151.0.7922.171)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [acc15263719765e506942f15eed93336, findElement {using=xpath, value=//div[@id=&apos;content&apos;]/*[normalize-space()=&apos;Your Account Has Been Created!&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59428}, goog:processID: 8456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59428/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: acc15263719765e506942f15eed93336]
+Command: [8917ddbc1096302a24ed8029088a30fb, findElement {value=//div[@id=&apos;content&apos;]/*[normalize-space()=&apos;Your Account Has Been Created!&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.171, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53048}, goog:processID: 8224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53048/devtoo..., se:cdpVersion: 151.0.7922.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8917ddbc1096302a24ed8029088a30fb]
 	at testCases.AccountRegisteration.registeration(AccountRegisteration.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 ... Removed 34 stack frames
@@ -356,35 +356,35 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registeration')
 data.setCell(0, 2, 'testCases.AccountRegisteration')
-data.setCell(0, 3, 16143);
+data.setCell(0, 3, 12589);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginwithMultipledata')
 data.setCell(1, 2, 'testCases.LoginDataDrivenTest')
-data.setCell(1, 3, 13004);
+data.setCell(1, 3, 12139);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginwithMultipledata')
 data.setCell(2, 2, 'testCases.LoginDataDrivenTest')
-data.setCell(2, 3, 12965);
+data.setCell(2, 3, 11714);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginwithMultipledata')
 data.setCell(3, 2, 'testCases.LoginDataDrivenTest')
-data.setCell(3, 3, 11536);
+data.setCell(3, 3, 11653);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginwithMultipledata')
 data.setCell(4, 2, 'testCases.LoginDataDrivenTest')
-data.setCell(4, 3, 11398);
+data.setCell(4, 3, 11607);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginwithMultipledata')
 data.setCell(5, 2, 'testCases.LoginDataDrivenTest')
-data.setCell(5, 3, 11182);
+data.setCell(5, 3, 10810);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginwithMultipledata')
-data.setCell(6, 2, 'testCases.LoginDataDrivenTest')
-data.setCell(6, 3, 2521);
+data.setCell(6, 1, 'veryLogin')
+data.setCell(6, 2, 'testCases.MyLoginTest')
+data.setCell(6, 3, 3407);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'veryLogin')
-data.setCell(7, 2, 'testCases.MyLoginTest')
-data.setCell(7, 3, 2469);
+data.setCell(7, 1, 'loginwithMultipledata')
+data.setCell(7, 2, 'testCases.LoginDataDrivenTest')
+data.setCell(7, 3, 2428);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -424,61 +424,61 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">registeration</span>
-                <span class="method-start">20982 ms</span>
+                <span class="method-start">11525 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">45563 ms</span>
+                <span class="method-start">24276 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.MyLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">driversetup(Chrome, Linux)</span>
-                <span class="method-start">64044 ms</span>
+                <span class="method-start">25359 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">veryLogin</span>
-                <span class="method-start">69049 ms</span>
+                <span class="method-start">37309 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">71520 ms</span>
+                <span class="method-start">40726 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.LoginDataDrivenTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">driversetup(Chrome, Linux)</span>
-                <span class="method-start">71945 ms</span>
+                <span class="method-start">41386 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginwithMultipledata(john.doe@testmail.com, John@123, Invalid)</span>
-                <span class="method-start">81035 ms</span>
+                <span class="method-start">47494 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginwithMultipledata(alice.smith@testmail.com, Alice@456, Invalid)</span>
-                <span class="method-start">92224 ms</span>
+                <span class="method-start">59636 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginwithMultipledata(robert.johnson@testmail.com, Robert@789, Invalid)</span>
-                <span class="method-start">105195 ms</span>
+                <span class="method-start">70450 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginwithMultipledata(pofoye5680@apdtax.com, Test@123456, Valid)</span>
-                <span class="method-start">118209 ms</span>
+                <span class="method-start">82058 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginwithMultipledata(emma.wilson@testmail.com, Emma@321, Invalid)</span>
-                <span class="method-start">120733 ms</span>
+                <span class="method-start">84492 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginwithMultipledata(michael.brown@testmail.com, Michael@654, Invalid)</span>
-                <span class="method-start">132133 ms</span>
+                <span class="method-start">96207 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">143670 ms</span>
+                <span class="method-start">107861 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
