@@ -23,10 +23,10 @@ public class AccountRegisteration extends DriverSetup {
 		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
 
 		RegistrationPage register = new RegistrationPage(driver);
-		register.enterFirstName("Yogesh");
-		register.enterLastName("Pandit");
-		register.enterEmail("yogeshpandit@gmail.com");
-		register.enterTephoneNumber("8788582778");
+		register.enterFirstName("Test");
+		register.enterLastName("QA");
+		register.enterEmail("testingautomation@gmail.com");
+		register.enterTephoneNumber("8788762778");
 		register.enterPassword("Tedsss@2345");
 		register.enterCnfrmPassword("Tedsss@2345");
 		register.newsLetterYes();
