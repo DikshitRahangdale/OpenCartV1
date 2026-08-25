@@ -1,5 +1,6 @@
 package testCases;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,7 +10,7 @@ import testBase.DriverSetup;
 
 public class AccountRegisteration extends DriverSetup {
 	@Test(groups = { "Sanity", "Smoke" })
-	public void registeration() {
+	public void registeration() throws InterruptedException {
 
 		logger.info("*****Starting Registration Process*******");
 
@@ -23,17 +24,22 @@ public class AccountRegisteration extends DriverSetup {
 		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
 
 		RegistrationPage register = new RegistrationPage(driver);
-		register.enterFirstName("Test");
-		register.enterLastName("QA");
-		register.enterEmail("testingautomation@gmail.com");
-		register.enterTephoneNumber("8788762778");
-		register.enterPassword("Tedsss@2345");
-		register.enterCnfrmPassword("Tedsss@2345");
+		register.enterFirstName("Tst");
+		register.enterLastName("QAs");
+		register.enterEmail("tesshivamogt7@gmail.com");
+		register.enterTephoneNumber("878762778");
+		register.enterPassword("Te12s@2345");
+		register.enterCnfrmPassword("Te12s@2345");
 		register.newsLetterYes();
 		register.clickPrivacyPolicycheckbox();
+		
+		wait.until(ExpectedConditions.elementToBeClickable(register.continueBtn));
 		register.clickContnueBtn();
+		
 
 		String registerConfrmMsg = register.rgstrSuccessMsg();
+		System.out.println(registerConfrmMsg);
+		
 
 		Assert.assertEquals(registerConfrmMsg, "Your Account Has Been Created!",
 				"Account is not Created or Success Message does not match");

@@ -24,6 +24,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -32,6 +33,7 @@ public class DriverSetup {
 	public static WebDriver driver;
 	public Logger logger;
 	public Properties pr;
+	public WebDriverWait wait;
 	public MutableCapabilities options; // MutableCapabilities is a parent class for browser-specific option classes
 
 	@BeforeClass(groups = { "Smoke", "Sanity", "Regression" })
@@ -114,6 +116,7 @@ public class DriverSetup {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		 wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get(pr.getProperty("appUrl")); // reading URL from properties file
 	}
 

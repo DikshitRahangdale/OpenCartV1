@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-04T18:33:19 IST" name="Suite" finished-at="2026-08-04T18:35:09 IST" duration-ms="110624">
+  <suite started-at="2026-08-25T21:53:45 IST" name="Suite" finished-at="2026-08-25T21:53:58 IST" duration-ms="12944">
     <groups>
       <group name="Sanity">
-        <method signature="AccountRegisteration.registeration()[pri:0, instance:testCases.AccountRegisteration@3af9c5b7]" name="registeration" class="testCases.AccountRegisteration"/>
+        <method signature="AccountRegisteration.registeration()[pri:0, instance:testCases.AccountRegisteration@622ef26a]" name="registeration" class="testCases.AccountRegisteration"/>
       </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="LoginDataDrivenTest.loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" name="loginwithMultipledata" class="testCases.LoginDataDrivenTest"/>
-      </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="AccountRegisteration.registeration()[pri:0, instance:testCases.AccountRegisteration@3af9c5b7]" name="registeration" class="testCases.AccountRegisteration"/>
-        <method signature="LoginDataDrivenTest.loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" name="loginwithMultipledata" class="testCases.LoginDataDrivenTest"/>
-        <method signature="MyLoginTest.veryLogin()[pri:0, instance:testCases.MyLoginTest@37883b97]" name="veryLogin" class="testCases.MyLoginTest"/>
+        <method signature="AccountRegisteration.registeration()[pri:0, instance:testCases.AccountRegisteration@622ef26a]" name="registeration" class="testCases.AccountRegisteration"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-08-04T18:33:19 IST" name="Test" finished-at="2026-08-04T18:35:09 IST" duration-ms="110624">
+    <test started-at="2026-08-25T21:53:45 IST" name="Test" finished-at="2026-08-25T21:53:58 IST" duration-ms="12944">
       <class name="testCases.AccountRegisteration">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountRegisteration@3af9c5b7]" started-at="2026-08-04T18:33:19 IST" name="driversetup" finished-at="2026-08-04T18:33:30 IST" duration-ms="11334" status="PASS">
+        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountRegisteration@622ef26a]" started-at="2026-08-25T21:53:46 IST" name="driversetup" finished-at="2026-08-25T21:53:54 IST" duration-ms="8111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,246 +29,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetup -->
-        <test-method signature="registeration()[pri:0, instance:testCases.AccountRegisteration@3af9c5b7]" started-at="2026-08-04T18:33:30 IST" name="registeration" finished-at="2026-08-04T18:33:45 IST" duration-ms="14938" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Account is not Created or Success Message does not match expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']"}
-  (Session info: chrome=150.0.7871.187)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93bc8d6b53e3d6ce378876c6f30495e1, findElement {value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56368}, goog:processID: 3096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56368/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 93bc8d6b53e3d6ce378876c6f30495e1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Account is not Created or Success Message does not match expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']"}
-  (Session info: chrome=150.0.7871.187)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93bc8d6b53e3d6ce378876c6f30495e1, findElement {value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.187, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56368}, goog:processID: 3096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56368/devtoo..., se:cdpVersion: 150.0.7871.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 93bc8d6b53e3d6ce378876c6f30495e1]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at testCases.AccountRegisteration.registeration(AccountRegisteration.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="registeration()[pri:0, instance:testCases.AccountRegisteration@622ef26a]" started-at="2026-08-25T21:53:54 IST" name="registeration" finished-at="2026-08-25T21:53:57 IST" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeration -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.AccountRegisteration@3af9c5b7]" started-at="2026-08-04T18:33:46 IST" name="closeDriver" finished-at="2026-08-04T18:33:47 IST" duration-ms="1003" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.AccountRegisteration@622ef26a]" started-at="2026-08-25T21:53:57 IST" name="closeDriver" finished-at="2026-08-25T21:53:58 IST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testCases.AccountRegisteration -->
-      <class name="testCases.LoginDataDrivenTest">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:33:56 IST" name="driversetup" finished-at="2026-08-04T18:34:08 IST" duration-ms="11894" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Linux]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driversetup -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:34:08 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-04T18:34:20 IST" duration-ms="11888" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[john.doe@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:34:20 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-04T18:34:31 IST" duration-ms="10737" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[alice.smith@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Alice@456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:34:31 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-04T18:34:43 IST" duration-ms="11772" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[robert.johnson@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Robert@789]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:34:43 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-04T18:34:45 IST" duration-ms="2038" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pofoye5680@apdtax.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:34:45 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-04T18:34:57 IST" duration-ms="12084" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[emma.wilson@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Emma@321]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:34:57 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-08-04T18:35:08 IST" duration-ms="11716" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[michael.brown@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Michael@654]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.LoginDataDrivenTest@6ab778a]" started-at="2026-08-04T18:35:08 IST" name="closeDriver" finished-at="2026-08-04T18:35:09 IST" duration-ms="804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.LoginDataDrivenTest -->
-      <class name="testCases.MyLoginTest">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.MyLoginTest@37883b97]" started-at="2026-08-04T18:33:47 IST" name="driversetup" finished-at="2026-08-04T18:33:52 IST" duration-ms="5620" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Linux]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driversetup -->
-        <test-method signature="veryLogin()[pri:0, instance:testCases.MyLoginTest@37883b97]" started-at="2026-08-04T18:33:52 IST" name="veryLogin" finished-at="2026-08-04T18:33:56 IST" duration-ms="3225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- veryLogin -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.MyLoginTest@37883b97]" started-at="2026-08-04T18:33:56 IST" name="closeDriver" finished-at="2026-08-04T18:33:56 IST" duration-ms="683" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.MyLoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

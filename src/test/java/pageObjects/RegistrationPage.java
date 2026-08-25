@@ -37,8 +37,8 @@ public class RegistrationPage extends ConstructorBase {
 	@FindBy(xpath = "//input[@name='agree' and @type='checkbox']")
 	WebElement privacypolicybox;
 
-	@FindBy(xpath = "//input[@name='agree' and @type='checkbox']/following-sibling::input[@value='Continue']")
-	WebElement continueBtn;
+	 @FindBy(xpath = "//input[@name='agree' and @type='checkbox']/following-sibling::input[@value='Continue']")
+	 public WebElement continueBtn;
 
 	@FindBy(xpath = "//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']")
 	WebElement registrationCongratMsg;
