@@ -1,5 +1,8 @@
 package testCases;
 
+
+import java.time.LocalDateTime;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,6 +14,9 @@ import testBase.DriverSetup;
 public class AccountRegisteration extends DriverSetup {
 	@Test(groups = { "Sanity", "Smoke" })
 	public void registeration() throws InterruptedException {
+		LocalDateTime dateTime = LocalDateTime.now();
+
+	        
 
 		logger.info("*****Starting Registration Process*******");
 
@@ -26,7 +32,7 @@ public class AccountRegisteration extends DriverSetup {
 		RegistrationPage register = new RegistrationPage(driver);
 		register.enterFirstName("Tst");
 		register.enterLastName("QAs");
-		register.enterEmail("automati@gmail.com");
+		register.enterEmail("automati"+dateTime+"@gmail.com");
 		register.enterTephoneNumber("878762778");
 		register.enterPassword("Te12s@2345");
 		register.enterCnfrmPassword("Te12s@2345");
