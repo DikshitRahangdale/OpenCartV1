@@ -1,6 +1,6 @@
 package testCases;
 
-
+import java.util.Random;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -14,9 +14,6 @@ import testBase.DriverSetup;
 public class AccountRegisteration extends DriverSetup {
 	@Test(groups = { "Sanity", "Smoke" })
 	public void registeration() throws InterruptedException {
-		
-
-	        
 
 		logger.info("*****Starting Registration Process*******");
 
@@ -32,20 +29,21 @@ public class AccountRegisteration extends DriverSetup {
 		RegistrationPage register = new RegistrationPage(driver);
 		register.enterFirstName("Tst");
 		register.enterLastName("QAs");
-		register.enterEmail("autordduyikj@gmail.com");
+
+		Random random = new Random();
+		int number = random.nextInt(1000);
+		register.enterEmail("autoruyikj" + number + "@gmail.com");
 		register.enterTephoneNumber("878762778");
 		register.enterPassword("Te12s@2345");
 		register.enterCnfrmPassword("Te12s@2345");
 		register.newsLetterYes();
 		register.clickPrivacyPolicycheckbox();
-		
+
 		wait.until(ExpectedConditions.elementToBeClickable(register.continueBtn));
 		register.clickContnueBtn();
-		
 
 		String registerConfrmMsg = register.rgstrSuccessMsg();
 		System.out.println(registerConfrmMsg);
-		
 
 		Assert.assertEquals(registerConfrmMsg, "Your Account Has Been Created!",
 				"Account is not Created or Success Message does not match");
