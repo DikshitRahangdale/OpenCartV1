@@ -11,8 +11,8 @@
 		<parameter name="os" value="Linux" />
 		<classes>
 			<class name="testCases.AccountRegisteration" />
-		<class name="testCases.MyLoginTest" />
-			<class name="testCases.LoginDataDrivenTest" /> 
+			<class name="testCases.MyLoginTest" />
+			<class name="testCases.LoginDataDrivenTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

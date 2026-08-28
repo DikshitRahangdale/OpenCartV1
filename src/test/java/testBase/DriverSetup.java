@@ -116,7 +116,7 @@ public class DriverSetup {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		 wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get(pr.getProperty("appUrl")); // reading URL from properties file
 	}
 

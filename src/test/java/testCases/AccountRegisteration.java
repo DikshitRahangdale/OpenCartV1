@@ -1,13 +1,13 @@
 package testCases;
 
 
-import java.time.LocalDateTime;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
+
 import pageObjects.RegistrationPage;
 import testBase.DriverSetup;
 
@@ -32,7 +32,7 @@ public class AccountRegisteration extends DriverSetup {
 		RegistrationPage register = new RegistrationPage(driver);
 		register.enterFirstName("Tst");
 		register.enterLastName("QAs");
-		register.enterEmail("automatikj@gmail.com");
+		register.enterEmail("autoruyikj@gmail.com");
 		register.enterTephoneNumber("878762778");
 		register.enterPassword("Te12s@2345");
 		register.enterCnfrmPassword("Te12s@2345");
