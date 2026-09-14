@@ -10,7 +10,7 @@ import testBase.DriverSetup;
 
 public class MyLoginTest extends DriverSetup {
 
-	@Test(groups="Smoke")
+	@Test(groups = "Smoke")
 	public void veryLogin() {
 
 		logger.info("Login Test Start");
@@ -23,7 +23,7 @@ public class MyLoginTest extends DriverSetup {
 		loginPage.enterUserEmail(pr.getProperty("userEmail"));
 		loginPage.enterPassword(pr.getProperty("userPassword"));
 		loginPage.clickLoginBtn();
-
+		logger.info("My Accoutn Page is Opening");
 		MyAccountPage accountPage = new MyAccountPage(driver);
 
 		boolean flag = accountPage.vrifyMyAccountHeading();
