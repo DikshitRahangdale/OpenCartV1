@@ -29,16 +29,22 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.github.javafaker.Faker;
+
 public class DriverSetup {
 	public static WebDriver driver;
 	public Logger logger;
 	public Properties pr;
 	public WebDriverWait wait;
 	public MutableCapabilities options; // MutableCapabilities is a parent class for browser-specific option classes
+	public Faker faker;
+	
 
 	@BeforeClass(groups = { "Smoke", "Sanity", "Regression" })
 	@Parameters({ "browsers","os"})
 	public void driversetup(String browsers, String os) throws IOException {
+		
+		faker=new Faker();
 
 		String huburl = "http://localhost:4444";
 
