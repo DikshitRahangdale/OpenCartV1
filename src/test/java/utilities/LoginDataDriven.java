@@ -1,21 +1,55 @@
 package utilities;
 
+import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 
 public class LoginDataDriven {
 
 	@DataProvider(name = "LoginData")
-	public Object[][] loginDataprovider() {
-		Object[][] dataObjects = new Object[][] { { "john.doe@testmail.com", "John@123", "Invalid" },
-				{ "alice.smith@testmail.com", "Alice@456", "Invalid" },
-				{ "robert.johnson@testmail.com", "Robert@789", "Invalid" },
-				{ "pofoye5680@apdtax.com", "Test@123456", "Valid" },
-				{ "emma.wilson@testmail.com", "Emma@321", "Invalid" },
-				{ "michael.brown@testmail.com", "Michael@654", "Invalid" }
+	public Object[][] loginDataprovider() throws IOException {
+		
+		
+		
+		
+		 String path = System.getProperty("user.dir")
+	                + "/testData/loginData.xlsx";
 
-		};
+	        ExcelFileUtils excel = new ExcelFileUtils();
 
-		return dataObjects;
+	        return excel.getExcelData(path, "Sheet1");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		ExcelFileUtils excel=new ExcelFileUtils(System.getProperty("user.dir")+"//testData//loginData.xlsx");
+//		int lastRowIndex = excel.getRowCount("Sheet1"); // returns last row index (0-based)
+//		int rowCount = lastRowIndex; // assuming first row is header and data starts from row 1
+//		int cellCount = excel.getCellCount("Sheet1", 0); // get cell count from header row (row 0)
+//
+//		String[][] data = new String[rowCount][cellCount];
+//
+//		// Read rows starting from 1 (first data row) to lastRowIndex inclusive
+//		for (int i = 1; i <= lastRowIndex; i++) {
+//			for (int j = 0; j < cellCount; j++) {
+//				// store into zero-based array index (i-1)
+//				data[i - 1][j] = excel.getCellData("Sheet1", i, j);
+//			}
+//		}
+//		return data;
+
+	
 	}
 
 }
