@@ -15,7 +15,7 @@ public class AccountRegisteration extends DriverSetup {
 	@Test(groups = { "Sanity", "Smoke" })
 	public void registeration() throws InterruptedException {
 
-		logger.info("*****Starting Registration Process*******");
+		logger.info("*****Starting Registration Process**");
 
 		HomePage home = new HomePage(driver);
 
