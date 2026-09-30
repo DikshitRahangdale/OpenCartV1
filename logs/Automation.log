@@ -152,3 +152,27 @@
 2026-09-18 20:42:08 [main] INFO  AccountRegisteration - Verify Resgistration URL 
 2026-09-18 20:42:28 [main] INFO  MyLoginTest - Login Test Start
 2026-09-18 20:42:29 [main] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-09-27 22:01:37 [main] INFO  AccountRegisteration - *****Starting Registration Process**
+2026-09-27 22:01:38 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-27 22:01:44 [main] INFO  MyLoginTest - Login Test Start
+2026-09-27 22:01:47 [main] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-09-27 22:03:23 [main] INFO  AccountRegisteration - *****Starting Registration Process**
+2026-09-27 22:03:24 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-27 22:03:31 [main] INFO  MyLoginTest - Login Test Start
+2026-09-27 22:03:35 [main] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-09-30 18:54:23 [main] INFO  AccountRegisteration - *****Starting Registration Process**
+2026-09-30 18:54:24 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 18:54:31 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-09-30 18:54:31 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 18:57:02 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-09-30 18:57:03 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 19:04:44 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-09-30 19:04:45 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 19:09:25 [main] INFO  AccountRegisteration - *****Starting Registration Process**
+2026-09-30 19:09:28 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 19:09:33 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-09-30 19:09:33 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 19:11:32 [main] INFO  AccountRegisteration - *****Starting Registration Process**
+2026-09-30 19:11:32 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 19:11:36 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-09-30 19:11:37 [main] INFO  AccountRegisteration - Verify Resgistration URL 

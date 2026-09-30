@@ -3,12 +3,16 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import testBase.ConstructorBase;
 
 public class RegistrationPage extends ConstructorBase {
 
 	public WebDriver driver;
+	public WebDriverWait wait;
 
 	@FindBy(id = "input-firstname")
 	WebElement firstName;
@@ -37,15 +41,18 @@ public class RegistrationPage extends ConstructorBase {
 	@FindBy(xpath = "//input[@name='agree' and @type='checkbox']")
 	WebElement privacypolicybox;
 
-	 @FindBy(xpath = "//input[@name='agree' and @type='checkbox']/following-sibling::input[@value='Continue']")
-	 public WebElement continueBtn;
+	@FindBy(xpath = "//input[@name='agree' and @type='checkbox']/following-sibling::input[@value='Continue']")
+	public WebElement continueBtn;
 
 	@FindBy(xpath = "//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']")
 	WebElement registrationCongratMsg;
 
-	public RegistrationPage(WebDriver driver) {
-		super(driver); // call the base or parent class constructor
+	@FindBy(xpath = " //input[@id='input-firstname']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
+	WebElement firstNamewarningMsg;
 
+	public RegistrationPage(WebDriver driver, WebDriverWait wait) {
+		super(driver); // call the base or parent class constructor
+		this.wait = wait;
 	}
 
 	public void enterFirstName(String firstName) {
@@ -95,4 +102,10 @@ public class RegistrationPage extends ConstructorBase {
 			return (e.getMessage());
 		}
 	}
+
+	public String firstNameWarnMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(firstNamewarningMsg)).getText();
+
+	}
+
 }

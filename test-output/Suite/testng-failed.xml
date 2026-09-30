@@ -8,13 +8,14 @@
     <parameter name="os" value="Linux"/>
     <parameter name="browsers" value="Chrome"/>
     <classes>
-      <class name="testCases.LoginDataDrivenTest">
+      <class name="testCases.AccountRegisteration">
         <methods>
+          <include name="pageObjectSetup"/>
           <include name="closeDriver"/>
-          <include name="loginwithMultipledata"/>
+          <include name="registeration"/>
           <include name="driversetup"/>
         </methods>
-      </class> <!-- testCases.LoginDataDrivenTest -->
+      </class> <!-- testCases.AccountRegisteration -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

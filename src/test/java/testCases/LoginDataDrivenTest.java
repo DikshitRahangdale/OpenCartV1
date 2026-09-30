@@ -23,7 +23,7 @@ public class LoginDataDrivenTest extends DriverSetup {
 		loginPag.enterPassword(password);
 		loginPag.clickLoginBtn();
 
-		MyAccountPage myaccount = new MyAccountPage(driver);
+		MyAccountPage myaccount = new MyAccountPage(driver,wait);
 		boolean loginstatu = myaccount.vrifyMyAccountHeading();
 
 		if (datastatus.equalsIgnoreCase("Valid")) {

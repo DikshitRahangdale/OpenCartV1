@@ -24,7 +24,7 @@ public class MyLoginTest extends DriverSetup {
 		loginPage.enterPassword(pr.getProperty("userPassword"));
 		loginPage.clickLoginBtn();
 		logger.info("My Accoutn Page is Opening");
-		MyAccountPage accountPage = new MyAccountPage(driver);
+		MyAccountPage accountPage = new MyAccountPage(driver,wait);
 
 		boolean flag = accountPage.vrifyMyAccountHeading();
 		Assert.assertTrue(flag, "Login Failed");

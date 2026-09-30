@@ -5,6 +5,8 @@
     <classes>
       <class name="testCases.AccountRegisteration">
         <methods>
+          <include name="providingOnlyMandatoryField"/>
+          <include name="pageObjectSetup"/>
           <include name="closeDriver"/>
           <include name="registeration"/>
           <include name="driversetup"/>
