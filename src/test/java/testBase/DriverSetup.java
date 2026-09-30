@@ -26,6 +26,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -38,13 +39,12 @@ public class DriverSetup {
 	public WebDriverWait wait;
 	public MutableCapabilities options; // MutableCapabilities is a parent class for browser-specific option classes
 	public Faker faker;
-	
 
 	@BeforeClass(groups = { "Smoke", "Sanity", "Regression" })
-	@Parameters({ "browsers","os"})
+	@Parameters({ "browsers", "os" })
 	public void driversetup(String browsers, String os) throws IOException {
-		
-		faker=new Faker();
+
+		faker = new Faker();
 
 		String huburl = "http://localhost:4444";
 
@@ -53,9 +53,8 @@ public class DriverSetup {
 		pr.load(fileReader);
 
 		// For Selenium Grid
-		if (pr.getProperty("execution_env").equalsIgnoreCase("remote"))
-            {
-		
+		if (pr.getProperty("execution_env").equalsIgnoreCase("remote")) {
+
 			// check Browsers
 			switch (browsers) {
 			case "Chrome":
@@ -66,8 +65,8 @@ public class DriverSetup {
 				options = new EdgeOptions();
 				break;
 			case "FirFox":
-			     options=new FirefoxOptions();
-			     break;
+				options = new FirefoxOptions();
+				break;
 			default:
 				System.out.println("Browser not Mach");
 				return;
@@ -75,8 +74,8 @@ public class DriverSetup {
 
 			// Chekc OS
 			if (os.equalsIgnoreCase("Windows")) {
-			
-                 options.setCapability("platformName", "Windows");
+
+				options.setCapability("platformName", "Windows");
 			} else if (os.equalsIgnoreCase("Mac")) {
 				options.setCapability("platformName", "mac");
 			} else if (os.equalsIgnoreCase("linux")) {
@@ -93,7 +92,7 @@ public class DriverSetup {
 		// For Local Execuation
 
 		else if (pr.getProperty("execution_env").equalsIgnoreCase("local"))
-         
+
 		{
 			switch (browsers) {
 			case "Chrome":
@@ -111,8 +110,7 @@ public class DriverSetup {
 				System.out.println("Browser Parameter Does Not Match");
 				return;
 			}
-		}
-		else {
+		} else {
 			System.out.println("Please Select Correct Environments");
 			return;
 		}
@@ -122,7 +120,7 @@ public class DriverSetup {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get(pr.getProperty("appUrl")); // reading URL from properties file
 	}
 
@@ -143,4 +141,6 @@ public class DriverSetup {
 		return screenshotPath;
 
 	}
+
+	
 }
