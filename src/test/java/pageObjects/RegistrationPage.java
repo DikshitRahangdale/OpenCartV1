@@ -47,8 +47,26 @@ public class RegistrationPage extends ConstructorBase {
 	@FindBy(xpath = "//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']")
 	WebElement registrationCongratMsg;
 
-	@FindBy(xpath = " //input[@id='input-firstname']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
+	@FindBy(xpath = "//input[@id='input-firstname']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
 	WebElement firstNamewarningMsg;
+
+	@FindBy(xpath = "//input[@id='input-lastname']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
+	WebElement lastNameWarnMsg;
+
+	@FindBy(xpath = "//input[@id='input-email']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
+	WebElement emailWarnMsg;
+
+	@FindBy(xpath = "//input[@id='input-telephone']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
+	WebElement telePhoneWarnMsg;
+
+	@FindBy(xpath = "//input[@id='input-password']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
+	WebElement passWordWarnMsg;
+
+	@FindBy(css = ".alert.alert-danger.alert-dismissible")
+	WebElement privacyPolicyWarnMsg;
+
+	@FindBy(css = ".fa-home")
+	WebElement homeIcon;
 
 	public RegistrationPage(WebDriver driver, WebDriverWait wait) {
 		super(driver); // call the base or parent class constructor
@@ -106,6 +124,30 @@ public class RegistrationPage extends ConstructorBase {
 	public String firstNameWarnMsg() {
 		return wait.until(ExpectedConditions.visibilityOf(firstNamewarningMsg)).getText();
 
+	}
+
+	public String lastNameWarnMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(lastNameWarnMsg)).getText();
+	}
+
+	public String emailWarnMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(emailWarnMsg)).getText();
+	}
+
+	public String telePhoneWarnMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(telePhoneWarnMsg)).getText();
+	}
+
+	public String passWordWrngMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(passWordWarnMsg)).getText();
+	}
+
+	public String privacyPolicyWarnMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(privacyPolicyWarnMsg)).getText();
+	}
+
+	public void clickOnHomeIcon() {
+		wait.until(ExpectedConditions.elementToBeClickable(homeIcon)).click();
 	}
 
 }

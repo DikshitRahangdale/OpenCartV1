@@ -176,3 +176,27 @@
 2026-09-30 19:11:32 [main] INFO  AccountRegisteration - Verify Resgistration URL 
 2026-09-30 19:11:36 [main] INFO  AccountRegisteration - *****Test Case 4**
 2026-09-30 19:11:37 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 19:40:10 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-09-30 19:40:15 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-09-30 19:40:16 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-01 18:22:46 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-01 18:22:50 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-01 18:22:51 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-01 18:22:51 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-01 18:22:51 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-01 18:22:51 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-01 18:22:51 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-01 18:22:51 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-01 18:22:51 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-01 18:33:57 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-01 18:34:01 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-01 18:34:01 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-01 18:34:02 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-01 18:34:02 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-01 18:34:02 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-01 18:34:02 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-01 18:34:02 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-01 18:34:02 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-01 18:34:02 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-01 18:34:07 [main] INFO  MyLoginTest - Login Test Start
+2026-10-01 18:34:08 [main] INFO  MyLoginTest - My Accoutn Page is Opening

@@ -27,8 +27,6 @@ public class AccountRegisteration extends DriverSetup {
 	@Test(groups = { "Sanity", "Smoke" }, priority = 1)
 	public void registeration() throws InterruptedException {
 
-	
-
 		home.clickMyAccount();
 		home.clickRegister();
 		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
@@ -80,9 +78,43 @@ public class AccountRegisteration extends DriverSetup {
 		Assert.assertEquals(actualUrlString, expecetdUrlString,
 				"Registration Page URL does not Match or Registeration Page does not OPen");
 		register.clickContnueBtn();
+
+		logger.info("Validating the First NAme warning message");
 		String actualfirstnameError = register.firstNameWarnMsg();
 		String expectedFirstError = "First Name must be between 1 and 32 characters!";
 		Assert.assertEquals(actualfirstnameError, expectedFirstError, "First Name Warning Message Does not Match");
+
+		logger.info("Validating the Last NAme warning message");
+		String actualLastnameError = register.lastNameWarnMsg();
+		String expectedLastnameError = "Last Name must be between 1 and 32 characters!";
+		Assert.assertEquals(actualLastnameError, expectedLastnameError, "Last Name Warning Message Does not Match");
+
+		logger.info("Validating the Email warning message");
+		String actualEmailError = register.emailWarnMsg();
+		String expectedEmailError = "E-Mail Address does not appear to be valid!";
+		Assert.assertEquals(actualEmailError, expectedEmailError, "Email Warning Message Does not Match");
+
+		logger.info("Validating the TelePhone NUmber warning message");
+		String actualPhoneError = register.telePhoneWarnMsg();
+		String expectedPhoneError = "Telephone must be between 3 and 32 characters!";
+		Assert.assertEquals(actualPhoneError, expectedPhoneError, "Telephone Warning Message Does not Match");
+
+		logger.info("Validating the Password warning message");
+		String actualPasswordError = register.passWordWrngMsg();
+		String expectedPasswordError = "Password must be between 4 and 20 characters!";
+		Assert.assertEquals(actualPasswordError, expectedPasswordError, "Password Warning Message Does not Match");
+
+		logger.info("Validating the Privacy Policy warning message");
+		String actualPrivacyError = register.privacyPolicyWarnMsg();
+		String expectedPrivacyError = "Warning: You must agree to the Privacy Policy!";
+		Assert.assertTrue(actualPrivacyError.contains(expectedPrivacyError),
+				"Expected text to contain '" + expectedPrivacyError + "', but got: " + actualPrivacyError);
+		logger.info("*****Test Case 4 Pass**");
+
+		register.clickOnHomeIcon();
+		String currentUrl = driver.getCurrentUrl();
+		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
+		Assert.assertEquals(currentUrl, expectedHomeUrl, "Home Page is not opened");
 
 	}
 

@@ -46,7 +46,7 @@ public class MyAccountPage extends ConstructorBase {
 		try {
 			return myAccountHeading.isDisplayed();
 		} catch (Exception e) {
-			return false;
+			return false; 
 		}
 	}
 
