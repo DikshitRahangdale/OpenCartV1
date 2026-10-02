@@ -113,7 +113,7 @@ public class AccountRegisteration extends DriverSetup {
 	}
 
 	@Test(priority = 3, dataProvider = "Status", dataProviderClass = DataProviders.class)
-	public void validatingRegswithYes(String status) {
+	public void validationtNewsLetterStatus(String status) {
 		logger.info("Test Case 5 & 6");
 		home.clickMyAccount();
 		home.clickRegister();
