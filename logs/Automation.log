@@ -391,3 +391,25 @@ Session ID: c95849daa92aeb54e29325a5ac570646
 2026-10-02 19:30:41 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
 2026-10-02 19:30:43 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
 2026-10-02 19:30:44 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-10-02 19:33:30 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 19:33:31 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:33:33 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:33:34 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 19:33:35 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:33:35 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 19:33:35 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 19:33:35 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 19:33:36 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 19:33:36 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 19:33:36 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 19:33:36 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 19:33:36 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:33:36 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:33:38 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:33:39 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-02 19:33:39 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-02 19:33:39 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:33:40 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:33:42 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:33:42 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-02 19:33:43 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
