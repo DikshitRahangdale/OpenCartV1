@@ -7,12 +7,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
 import testBase.ConstructorBase;
 
 public class RegistrationPage extends ConstructorBase {
 
 	public WebDriver driver;
 	public WebDriverWait wait;
+	public Faker faker;
 
 	@FindBy(id = "input-firstname")
 	WebElement firstName;
@@ -71,6 +74,7 @@ public class RegistrationPage extends ConstructorBase {
 	public RegistrationPage(WebDriver driver, WebDriverWait wait) {
 		super(driver); // call the base or parent class constructor
 		this.wait = wait;
+		faker = new Faker();
 	}
 
 	public void enterFirstName(String firstName) {
@@ -110,7 +114,8 @@ public class RegistrationPage extends ConstructorBase {
 	}
 
 	public void clickContnueBtn() {
-		continueBtn.click();
+		wait.until(ExpectedConditions.elementToBeClickable(continueBtn)).click();
+
 	}
 
 	public String rgstrSuccessMsg() {
@@ -148,6 +153,28 @@ public class RegistrationPage extends ConstructorBase {
 
 	public void clickOnHomeIcon() {
 		wait.until(ExpectedConditions.elementToBeClickable(homeIcon)).click();
+	}
+
+	public void fillRegistrationForm(String newsletter) {
+
+		enterFirstName(faker.name().firstName());
+		enterLastName(faker.name().lastName());
+		enterEmail(faker.internet().safeEmailAddress());
+		enterTephoneNumber(faker.phoneNumber().cellPhone());
+
+		String password = faker.internet().password(5, 10);
+
+		enterPassword(password);
+		enterCnfrmPassword(password);
+
+		if (newsletter.equalsIgnoreCase("Yes")) {
+			newsLetterYes();
+		} else {
+			newsLetterNo();
+		}
+
+		clickPrivacyPolicycheckbox();
+		clickContnueBtn();
 	}
 
 }

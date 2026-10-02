@@ -200,3 +200,194 @@
 2026-10-01 18:34:02 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
 2026-10-01 18:34:07 [main] INFO  MyLoginTest - Login Test Start
 2026-10-01 18:34:08 [main] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-10-01 18:55:12 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-01 18:55:25 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-01 18:55:25 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-01 18:55:26 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-01 18:55:26 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-01 18:55:27 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-01 18:55:27 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-01 18:55:27 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-01 18:55:27 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-01 18:55:27 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-01 18:55:32 [main] INFO  MyLoginTest - Login Test Start
+2026-10-01 18:55:33 [main] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-10-02 17:11:37 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 17:11:42 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 17:11:43 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 17:11:43 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 17:11:43 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 17:11:43 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 17:11:43 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 17:11:44 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 17:11:44 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 17:11:44 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 17:11:55 [main] INFO  MyLoginTest - Login Test Start
+2026-10-02 17:11:56 [main] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-10-02 18:05:41 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 18:05:42 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:05:46 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 18:05:47 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:05:47 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 18:05:48 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 18:05:48 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 18:05:48 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 18:05:48 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 18:05:48 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 18:05:48 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 18:05:49 [main] INFO  AccountRegisteration - Test Case 5
+2026-10-02 18:05:49 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:14:24 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 18:14:25 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:14:29 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 18:14:30 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:14:31 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 18:14:31 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 18:14:31 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 18:14:31 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 18:14:31 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 18:14:31 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 18:14:31 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 18:14:32 [main] INFO  AccountRegisteration - Test Case 5
+2026-10-02 18:14:32 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:14:37 [main] INFO  AccountRegisteration - Test Case 5 is Passed 
+2026-10-02 18:14:40 [main] INFO  AccountRegisteration - Test Case 6 start
+2026-10-02 18:14:40 [main] INFO  AccountRegisteration - Clicking on My Account Heading
+2026-10-02 18:14:41 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:14:45 [main] INFO  AccountRegisteration - Test Case 6 is Passed 
+2026-10-02 18:17:16 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 18:17:17 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:17:21 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 18:17:22 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:17:23 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 18:17:23 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 18:17:23 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 18:17:23 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 18:17:23 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 18:17:23 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 18:17:23 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 18:17:24 [main] INFO  AccountRegisteration - Test Case 5
+2026-10-02 18:17:24 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:17:27 [main] INFO  AccountRegisteration - Test Case 5 is Passed 
+2026-10-02 18:17:29 [main] INFO  AccountRegisteration - Test Case 6 start
+2026-10-02 18:17:29 [main] INFO  AccountRegisteration - Clicking on My Account Heading
+2026-10-02 18:17:29 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 18:17:33 [main] INFO  AccountRegisteration - Test Case 6 is Passed 
+2026-10-02 18:17:39 [main] INFO  MyLoginTest - Login Test Start
+2026-10-02 18:17:41 [main] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-10-02 19:04:04 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 19:04:05 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:04:08 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:04:09 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 19:04:10 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:04:10 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 19:04:10 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 19:04:11 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 19:04:11 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 19:04:11 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 19:04:11 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 19:04:11 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 19:04:11 [main] INFO  AccountRegisteration - Test Case 5
+2026-10-02 19:04:12 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:04:13 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:04:14 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-02 19:04:15 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-02 19:04:15 [main] INFO  AccountRegisteration - Test Case 5
+2026-10-02 19:04:16 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:04:18 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:04:18 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-02 19:04:19 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-10-02 19:10:37 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 19:10:38 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:10:42 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:10:44 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 19:10:45 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 19:10:46 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:10:47 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:10:51 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:10:52 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-02 19:10:53 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-02 19:10:53 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:10:54 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:10:56 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:10:57 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-02 19:10:58 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-10-02 19:11:54 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 19:11:54 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:11:57 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:11:58 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 19:11:58 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:11:59 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 19:11:59 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 19:11:59 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 19:11:59 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 19:11:59 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 19:11:59 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 19:11:59 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 19:12:00 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:12:00 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:12:02 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:12:03 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-02 19:12:04 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-02 19:12:04 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:12:05 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:12:16 [main] INFO  AccountRegisteration - Registration confirmation message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/*[normalize-space()='Your Account Has Been Created!']"}
+  (Session info: chrome=154.0.8037.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c95849daa92aeb54e29325a5ac570646, findElement {value=//div[@id='content']/*[normalize-space()='Your Account Has Been Created!'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63273}, goog:processID: 15316, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63273/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c95849daa92aeb54e29325a5ac570646
+2026-10-02 19:29:20 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 19:29:21 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:29:24 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:29:25 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 19:29:25 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:29:25 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 19:29:26 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 19:29:26 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 19:29:26 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 19:29:26 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 19:29:26 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 19:29:26 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 19:29:26 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:29:27 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:29:29 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:29:31 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-02 19:29:32 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-02 19:29:32 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:29:32 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:29:35 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:29:36 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-02 19:29:37 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-10-02 19:30:26 [main] INFO  AccountRegisteration - Test Case 1
+2026-10-02 19:30:26 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:30:32 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:30:33 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-02 19:30:33 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:30:34 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-02 19:30:34 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-02 19:30:34 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-02 19:30:34 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-02 19:30:34 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-02 19:30:34 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-02 19:30:34 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-02 19:30:35 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:30:35 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:30:37 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:30:38 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-02 19:30:39 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-02 19:30:39 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-02 19:30:39 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-02 19:30:41 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-02 19:30:43 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-02 19:30:44 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No

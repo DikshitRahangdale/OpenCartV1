@@ -21,8 +21,6 @@ public class MyAccountPage extends ConstructorBase {
 		this.wait = wait;
 	}
 
-
-
 	@FindBy(xpath = "//div[@id='content']/child::*[normalize-space()='My Account']")
 	WebElement myAccountHeading;
 
@@ -32,13 +30,15 @@ public class MyAccountPage extends ConstructorBase {
 	@FindBy(xpath = "//div[@id='content']/child::div/descendant::a[contains(@class, 'btn btn-primary')]")
 	WebElement clickOnlogoutcontBtn;
 
+	@FindBy(xpath = "//div[@id='content']//a[contains(@href,'newsletter')]")
+	WebElement subscribeNewsletterlinks;
+
 	public void clickLogout() {
 		logoutOption.click();
 	}
 
 	public void clickOnlogoutcontBtns() {
 		wait.until(ExpectedConditions.elementToBeClickable(clickOnlogoutcontBtn)).click();
-
 	}
 
 	public boolean vrifyMyAccountHeading() {
@@ -46,8 +46,12 @@ public class MyAccountPage extends ConstructorBase {
 		try {
 			return myAccountHeading.isDisplayed();
 		} catch (Exception e) {
-			return false; 
+			return false;
 		}
+	}
+
+	public void clickonNewsletterLink() {
+		wait.until(ExpectedConditions.visibilityOf(subscribeNewsletterlinks)).click();
 	}
 
 }

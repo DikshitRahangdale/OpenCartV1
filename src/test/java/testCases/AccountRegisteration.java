@@ -5,28 +5,36 @@ import java.util.Random;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+import pageObjects.AccountSuccessPage;
 import pageObjects.HomePage;
 import pageObjects.MyAccountPage;
+import pageObjects.NewsLetterpage;
 import pageObjects.RegistrationPage;
 import testBase.DriverSetup;
+import utilities.DataProviders;
 
 public class AccountRegisteration extends DriverSetup {
 	public HomePage home;
 	public MyAccountPage myaccount;
 	public RegistrationPage register;
+	public AccountSuccessPage successPage;
+	public NewsLetterpage newsLetterPage;
 
 	@BeforeClass
 	public void pageObjectSetup() {
 		home = new HomePage(driver);
 		myaccount = new MyAccountPage(driver, wait);
 		register = new RegistrationPage(driver, wait);
+		successPage = new AccountSuccessPage(driver, wait);
+		newsLetterPage = new NewsLetterpage(driver, wait);
 	}
 
 	@Test(groups = { "Sanity", "Smoke" }, priority = 1)
 	public void registeration() throws InterruptedException {
-
+		logger.info("Test Case 1");
 		home.clickMyAccount();
 		home.clickRegister();
 		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
@@ -34,36 +42,22 @@ public class AccountRegisteration extends DriverSetup {
 		logger.info("Verify Resgistration URL ");
 		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
 
-		register.enterFirstName(faker.name().firstName());
-		register.enterLastName(faker.name().lastName());
-
-		Random random = new Random();
-		int number = random.nextInt(1000);
-		register.enterEmail(faker.internet().safeEmailAddress());
-		register.enterTephoneNumber(faker.phoneNumber().cellPhone());
-		String passwords = faker.internet().password(5, 10);
-		register.enterPassword(passwords);
-		register.enterCnfrmPassword(passwords);
-		register.newsLetterYes();
-		register.clickPrivacyPolicycheckbox();
-
-		wait.until(ExpectedConditions.elementToBeClickable(register.continueBtn));
-		register.clickContnueBtn();
+		register.fillRegistrationForm("Yes");
 
 		String registerConfrmMsg = register.rgstrSuccessMsg();
-		System.out.println(registerConfrmMsg);
+		logger.info("Registration confirmation message: " + registerConfrmMsg);
 
 		Assert.assertEquals(registerConfrmMsg, "Your Account Has Been Created!",
 				"Account is not Created or Success Message does not match");
+
 		home.clickMyAccount();
 		myaccount.clickLogout();
 		myaccount.clickOnlogoutcontBtns();
 		String currentUrl = driver.getCurrentUrl();
 		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
 
-		if (!currentUrl.equals(expectedHomeUrl)) {
-			System.out.println("The user does not Logout or Home Page URL is not matching");
-		}
+		Assert.assertEquals(currentUrl, expectedHomeUrl,
+				"User was not logged out successfully or Home Page URL does not match");
 
 	}
 
@@ -115,6 +109,62 @@ public class AccountRegisteration extends DriverSetup {
 		String currentUrl = driver.getCurrentUrl();
 		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
 		Assert.assertEquals(currentUrl, expectedHomeUrl, "Home Page is not opened");
+
+	}
+
+	@Test(priority = 3, dataProvider = "Status", dataProviderClass = DataProviders.class)
+	public void validatingRegswithYes(String status) {
+		logger.info("Test Case 5 & 6");
+		home.clickMyAccount();
+		home.clickRegister();
+		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString = driver.getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
+
+		register.fillRegistrationForm(status);
+
+		String registerConfrmMsg = register.rgstrSuccessMsg();
+		logger.info("Registration confirmation message: " + registerConfrmMsg);
+
+		Assert.assertEquals(registerConfrmMsg, "Your Account Has Been Created!",
+				"Account is not Created or Success Message does not match");
+
+		successPage.clickOnContBtn();
+		myaccount.clickonNewsletterLink();
+		String actualUrl = driver.getCurrentUrl();
+		String expectedURL = "https://tutorialsninja.com/demo/index.php?route=account/newsletter";
+		Assert.assertEquals(actualUrl, expectedURL, "The NewsLetter URl Does not Match means");
+
+		if (status.equalsIgnoreCase("Yes")) {
+			boolean yesradioStatus = newsLetterPage.statusOfNewsletterYes();
+			boolean noRadioStatus = newsLetterPage.statusOfNewsletterNo();
+			Assert.assertTrue(yesradioStatus, "Yes NewsLetter radio button is not selected");
+			Assert.assertFalse(noRadioStatus, "No Newsletter radio button is selected");
+
+			logger.info("Newsletter Yes validation completed successfully");
+
+		} else if (status.equalsIgnoreCase("No")) {
+			boolean noradioStatus = newsLetterPage.statusOfNewsletterNo();
+			boolean yesRadioStatus = newsLetterPage.statusOfNewsletterYes();
+			Assert.assertTrue(noradioStatus, "No NewsLetter radio button is not selected");
+			Assert.assertFalse(yesRadioStatus, "Yes Newsletter radio button is selected");
+
+			logger.info("Newsletter No validation completed successfully");
+		} else {
+			Assert.fail("Invalid Newsletter status provided: " + status);
+		}
+
+		home.clickMyAccount();
+		myaccount.clickLogout();
+		myaccount.clickOnlogoutcontBtns();
+		String currentUrl = driver.getCurrentUrl();
+		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
+
+		Assert.assertEquals(currentUrl, expectedHomeUrl,
+				"User was not logged out successfully or Home Page URL does not match");
+
+		logger.info("Newsletter test completed successfully for status: " + status);
 
 	}
 
