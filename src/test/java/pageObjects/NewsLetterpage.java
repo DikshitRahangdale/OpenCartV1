@@ -10,7 +10,7 @@ import testBase.ConstructorBase;
 
 public class NewsLetterpage extends ConstructorBase {
 	public WebDriverWait wait;
-	public WebDriver driver;
+
 
 	@FindBy(css = "input[name='newsletter'][value='1']")
 	WebElement newsLetterYes;

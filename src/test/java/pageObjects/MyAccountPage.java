@@ -1,8 +1,5 @@
 package pageObjects;
 
-import java.security.PublicKey;
-
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +10,7 @@ import testBase.ConstructorBase;
 
 public class MyAccountPage extends ConstructorBase {
 
-	public WebDriver driver;
+	
 	public WebDriverWait wait;
 
 	public MyAccountPage(WebDriver driver, WebDriverWait wait) {

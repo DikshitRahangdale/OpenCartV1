@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import  pageObjects.MyAccountPage;
+import testBase.DriverManager;
 import testBase.DriverSetup;
 import utilities.LoginDataDriven;
 
@@ -14,16 +15,16 @@ public class LoginDataDrivenTest extends DriverSetup {
 	@Test(dataProvider = "LoginData", dataProviderClass = LoginDataDriven.class,groups = {"Regression","Smoke"})
 	public void loginwithMultipledata(String username, String password, String datastatus) {
 
-		HomePage home = new HomePage(driver);
+		HomePage home = new HomePage(DriverManager.getDriver());
 		home.clickMyAccount();
 		home.clickLogin();
 
-		LoginPage loginPag = new LoginPage(driver);
+		LoginPage loginPag = new LoginPage(DriverManager.getDriver());
 		loginPag.enterUserEmail(username);
 		loginPag.enterPassword(password);
 		loginPag.clickLoginBtn();
 
-		MyAccountPage myaccount = new MyAccountPage(driver,wait);
+		MyAccountPage myaccount = new MyAccountPage( DriverManager.getDriver(),wait);
 		boolean loginstatu = myaccount.vrifyMyAccountHeading();
 
 		if (datastatus.equalsIgnoreCase("Valid")) {

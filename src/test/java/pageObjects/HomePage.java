@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import testBase.ConstructorBase;
 
 public class HomePage extends ConstructorBase {
-	public WebDriver driver;
+
 
 	@FindBy(xpath = "//span[normalize-space()='My Account']/parent::a")
 	WebElement myAccoun;

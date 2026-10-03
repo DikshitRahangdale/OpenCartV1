@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import testBase.ConstructorBase;
 
 public class LoginPage extends ConstructorBase {
-	public WebDriver driver;
+	
 
 	public LoginPage(WebDriver driver) {
 		super(driver);

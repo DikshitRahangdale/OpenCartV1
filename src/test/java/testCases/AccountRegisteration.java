@@ -1,5 +1,6 @@
 package testCases;
 
+import testBase.DriverManager;
 import java.util.Random;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,11 +26,11 @@ public class AccountRegisteration extends DriverSetup {
 
 	@BeforeClass
 	public void pageObjectSetup() {
-		home = new HomePage(driver);
-		myaccount = new MyAccountPage(driver, wait);
-		register = new RegistrationPage(driver, wait);
-		successPage = new AccountSuccessPage(driver, wait);
-		newsLetterPage = new NewsLetterpage(driver, wait);
+		home = new HomePage(DriverManager.getDriver());
+		myaccount = new MyAccountPage(DriverManager.getDriver(), wait);
+		register = new RegistrationPage(DriverManager.getDriver(), wait);
+		successPage = new AccountSuccessPage(DriverManager.getDriver(), wait);
+		newsLetterPage = new NewsLetterpage(DriverManager.getDriver(), wait);
 	}
 
 	@Test(groups = { "Sanity", "Smoke" }, priority = 1)
@@ -38,7 +39,7 @@ public class AccountRegisteration extends DriverSetup {
 		home.clickMyAccount();
 		home.clickRegister();
 		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
-		String actualUrlString = driver.getCurrentUrl();
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
 		logger.info("Verify Resgistration URL ");
 		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
 
@@ -53,7 +54,7 @@ public class AccountRegisteration extends DriverSetup {
 		home.clickMyAccount();
 		myaccount.clickLogout();
 		myaccount.clickOnlogoutcontBtns();
-		String currentUrl = driver.getCurrentUrl();
+		String currentUrl = DriverManager.getDriver().getCurrentUrl();
 		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
 
 		Assert.assertEquals(currentUrl, expectedHomeUrl,
@@ -67,7 +68,7 @@ public class AccountRegisteration extends DriverSetup {
 		home.clickMyAccount();
 		home.clickRegister();
 		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
-		String actualUrlString = driver.getCurrentUrl();
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
 		logger.info("Verify Resgistration URL ");
 		Assert.assertEquals(actualUrlString, expecetdUrlString,
 				"Registration Page URL does not Match or Registeration Page does not OPen");
@@ -106,7 +107,7 @@ public class AccountRegisteration extends DriverSetup {
 		logger.info("*****Test Case 4 Pass**");
 
 		register.clickOnHomeIcon();
-		String currentUrl = driver.getCurrentUrl();
+		String currentUrl = DriverManager.getDriver().getCurrentUrl();
 		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
 		Assert.assertEquals(currentUrl, expectedHomeUrl, "Home Page is not opened");
 
@@ -118,7 +119,7 @@ public class AccountRegisteration extends DriverSetup {
 		home.clickMyAccount();
 		home.clickRegister();
 		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
-		String actualUrlString = driver.getCurrentUrl();
+		String actualUrlString =  DriverManager.getDriver().getCurrentUrl();
 		logger.info("Verify Resgistration URL ");
 		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
 
@@ -132,7 +133,7 @@ public class AccountRegisteration extends DriverSetup {
 
 		successPage.clickOnContBtn();
 		myaccount.clickonNewsletterLink();
-		String actualUrl = driver.getCurrentUrl();
+		String actualUrl = DriverManager.getDriver().getCurrentUrl();
 		String expectedURL = "https://tutorialsninja.com/demo/index.php?route=account/newsletter";
 		Assert.assertEquals(actualUrl, expectedURL, "The NewsLetter URl Does not Match means");
 
@@ -158,7 +159,7 @@ public class AccountRegisteration extends DriverSetup {
 		home.clickMyAccount();
 		myaccount.clickLogout();
 		myaccount.clickOnlogoutcontBtns();
-		String currentUrl = driver.getCurrentUrl();
+		String currentUrl = DriverManager.getDriver().getCurrentUrl();
 		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
 
 		Assert.assertEquals(currentUrl, expectedHomeUrl,

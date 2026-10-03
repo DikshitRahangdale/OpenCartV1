@@ -33,7 +33,7 @@ import org.testng.annotations.Parameters;
 import com.github.javafaker.Faker;
 
 public class DriverSetup {
-	public static WebDriver driver;
+	// public WebDriver driver;
 	public Logger logger;
 	public Properties pr;
 	public WebDriverWait wait;
@@ -85,8 +85,8 @@ public class DriverSetup {
 				return;
 			}
 
-			driver = new RemoteWebDriver(URI.create(huburl).toURL(), options);
-
+			WebDriver remoteWebDriver = new RemoteWebDriver(URI.create(huburl).toURL(), options);
+			DriverManager.setDriver(remoteWebDriver);
 		}
 
 		// For Local Execuation
@@ -96,15 +96,15 @@ public class DriverSetup {
 		{
 			switch (browsers) {
 			case "Chrome":
-				driver = new ChromeDriver();
+				DriverManager.setDriver(new ChromeDriver());
 				break;
 
 			case "Edge":
-				driver = new EdgeDriver();
+				DriverManager.setDriver(new EdgeDriver());
 				break;
 
 			case "FireFox":
-				driver = new FirefoxDriver();
+				DriverManager.setDriver(new FirefoxDriver());
 				break;
 			default:
 				System.out.println("Browser Parameter Does Not Match");
@@ -117,23 +117,28 @@ public class DriverSetup {
 
 		logger = LogManager.getLogger(this.getClass()); // use for logging
 
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		driver.get(pr.getProperty("appUrl")); // reading URL from properties file
+		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().manage().deleteAllCookies();
+		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
+		DriverManager.getDriver().get(pr.getProperty("appUrl")); // reading URL from properties file
 	}
 
 	@AfterClass(groups = { "Smoke", "Sanity", "Regression" })
 	public void closeDriver() {
-		driver.quit();
+		if (DriverManager.getDriver() != null) {
+
+			DriverManager.getDriver().quit();
+
+			DriverManager.unload();
+		}
 	}
 
 	public static String takesScreenshot(String tname) throws IOException {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		String screenshotPath = System.getProperty("user.dir") + "\\screenshots\\testscreenshot_" + timeStamp + "_"
 				+ tname + ".jpg";
-		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		TakesScreenshot screenshot = (TakesScreenshot) DriverManager.getDriver();
 		File file = screenshot.getScreenshotAs(OutputType.FILE);
 		File srcFile = new File(screenshotPath);
 		FileUtils.copyFile(file, srcFile);
@@ -142,5 +147,4 @@ public class DriverSetup {
 
 	}
 
-	
 }

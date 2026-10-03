@@ -13,7 +13,7 @@ import testBase.ConstructorBase;
 
 public class RegistrationPage extends ConstructorBase {
 
-	public WebDriver driver;
+	
 	public WebDriverWait wait;
 	public Faker faker;
 
