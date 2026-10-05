@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 
@@ -13,7 +12,6 @@ import testBase.ConstructorBase;
 
 public class RegistrationPage extends ConstructorBase {
 
-	
 	public WebDriverWait wait;
 	public Faker faker;
 
@@ -33,7 +31,7 @@ public class RegistrationPage extends ConstructorBase {
 	WebElement passwordInput;
 
 	@FindBy(id = "input-confirm")
-	WebElement cnfrmPasswordInput;
+	public WebElement cnfrmPasswordInput;
 
 	@FindBy(xpath = "//label[normalize-space()='Yes']")
 	WebElement newsletterYes;
@@ -65,6 +63,9 @@ public class RegistrationPage extends ConstructorBase {
 	@FindBy(xpath = "//input[@id='input-password']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
 	WebElement passWordWarnMsg;
 
+	@FindBy(xpath = "//input[@id='input-confirm']/ancestor::div[contains(@class,'form-group')]//div[contains(@class,'text-danger')]")
+	WebElement cnfrmPasswordWarnMsg;
+
 	@FindBy(css = ".alert.alert-danger.alert-dismissible")
 	WebElement privacyPolicyWarnMsg;
 
@@ -94,10 +95,12 @@ public class RegistrationPage extends ConstructorBase {
 	}
 
 	public void enterPassword(String password) {
+		passwordInput.clear();
 		this.passwordInput.sendKeys(password);
 	}
 
 	public void enterCnfrmPassword(String cnfrmPassword) {
+		cnfrmPasswordInput.clear();
 		this.cnfrmPasswordInput.sendKeys(cnfrmPassword);
 	}
 
@@ -145,6 +148,10 @@ public class RegistrationPage extends ConstructorBase {
 
 	public String passWordWrngMsg() {
 		return wait.until(ExpectedConditions.visibilityOf(passWordWarnMsg)).getText();
+	}
+
+	public String cnfrmPasswordWrngMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(cnfrmPasswordWarnMsg)).getText();
 	}
 
 	public String privacyPolicyWarnMsg() {

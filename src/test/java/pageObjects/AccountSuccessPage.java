@@ -10,7 +10,7 @@ import testBase.ConstructorBase;
 
 public class AccountSuccessPage extends ConstructorBase {
 	public WebDriverWait wait;
-	
+
 
 	@FindBy(xpath = "//div[@id='content']/child::div[@class='buttons']/descendant::a[contains(@class, 'btn-primary')]")
 	WebElement contButton;

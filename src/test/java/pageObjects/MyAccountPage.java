@@ -10,7 +10,7 @@ import testBase.ConstructorBase;
 
 public class MyAccountPage extends ConstructorBase {
 
-	
+
 	public WebDriverWait wait;
 
 	public MyAccountPage(WebDriver driver, WebDriverWait wait) {

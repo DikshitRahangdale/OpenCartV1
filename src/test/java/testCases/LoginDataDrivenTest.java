@@ -15,20 +15,20 @@ public class LoginDataDrivenTest extends DriverSetup {
 	@Test(dataProvider = "LoginData", dataProviderClass = LoginDataDriven.class,groups = {"Regression","Smoke"})
 	public void loginwithMultipledata(String username, String password, String datastatus) {
 
-		HomePage home = new HomePage(DriverManager.getDriver());
+		HomePage home = new HomePage(DriverManager.getDriver(),wait);
 		home.clickMyAccount();
 		home.clickLogin();
 
-		LoginPage loginPag = new LoginPage(DriverManager.getDriver());
+		LoginPage loginPag = new LoginPage(DriverManager.getDriver(),wait);
 		loginPag.enterUserEmail(username);
-		loginPag.enterPassword(password);
+		loginPag.enterPassword(password); 
 		loginPag.clickLoginBtn();
 
 		MyAccountPage myaccount = new MyAccountPage( DriverManager.getDriver(),wait);
 		boolean loginstatu = myaccount.vrifyMyAccountHeading();
 
 		if (datastatus.equalsIgnoreCase("Valid")) {
-			if (loginstatu == true) {
+			if (loginstatu) {
 				Assert.assertTrue(loginstatu);
 				System.out.println("Login Successfull: " + "Username: " + username + " Password:" + password
 						+ " Creadential status:" + datastatus);
@@ -39,7 +39,7 @@ public class LoginDataDrivenTest extends DriverSetup {
 				Assert.assertTrue(false);
 			}
 		} else if (datastatus.equalsIgnoreCase("Invalid")) {
-			if (loginstatu == true) {
+			if (loginstatu) {
 				Assert.assertTrue(false);
 				System.out.println("Login is Successfull with Invalid Creadential: " + "Username: " + username
 						+ " Password:" + password + " Creadential status:" + datastatus);

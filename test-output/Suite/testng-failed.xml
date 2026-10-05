@@ -4,18 +4,33 @@
   <listeners>
     <listener class-name="utilities.ExtentReportss"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="TestChrome(failed)">
     <parameter name="os" value="Linux"/>
     <parameter name="browsers" value="Chrome"/>
     <classes>
+      <class name="testCases.MyLoginTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="veryLogin"/>
+          <include name="driversetup"/>
+        </methods>
+      </class> <!-- testCases.MyLoginTest -->
       <class name="testCases.AccountRegisteration">
         <methods>
+          <include name="validateDifferentPassowrd"/>
           <include name="pageObjectSetup"/>
           <include name="closeDriver"/>
-          <include name="registeration"/>
+          <include name="navigateToDifferentWay"/>
           <include name="driversetup"/>
         </methods>
       </class> <!-- testCases.AccountRegisteration -->
+      <class name="testCases.LoginDataDrivenTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="loginwithMultipledata" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="driversetup"/>
+        </methods>
+      </class> <!-- testCases.LoginDataDrivenTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

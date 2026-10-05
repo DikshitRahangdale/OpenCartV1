@@ -14,7 +14,7 @@ public class NewsLetterpage extends ConstructorBase {
 
 	@FindBy(css = "input[name='newsletter'][value='1']")
 	WebElement newsLetterYes;
-	
+
 	@FindBy(css = "input[name='newsletter'][value='0']")
 	WebElement newsLetterNo;
 

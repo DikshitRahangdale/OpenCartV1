@@ -16,11 +16,11 @@ public class MyLoginTest extends DriverSetup {
 
 		logger.info("Login Test Start");
 
-		HomePage homePage = new HomePage(DriverManager.getDriver());
+		HomePage homePage = new HomePage(DriverManager.getDriver(),wait);
 		homePage.clickMyAccount();
 		homePage.clickLogin();
 
-		LoginPage loginPage = new LoginPage(DriverManager.getDriver());
+		LoginPage loginPage = new LoginPage(DriverManager.getDriver(),wait);
 		loginPage.enterUserEmail(pr.getProperty("userEmail"));
 		loginPage.enterPassword(pr.getProperty("userPassword"));
 		loginPage.clickLoginBtn();

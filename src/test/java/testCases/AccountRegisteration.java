@@ -1,19 +1,16 @@
 package testCases;
 
-import testBase.DriverManager;
-import java.util.Random;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import pageObjects.AccountSuccessPage;
 import pageObjects.HomePage;
+import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
 import pageObjects.NewsLetterpage;
 import pageObjects.RegistrationPage;
+import testBase.DriverManager;
 import testBase.DriverSetup;
 import utilities.DataProviders;
 
@@ -23,14 +20,16 @@ public class AccountRegisteration extends DriverSetup {
 	public RegistrationPage register;
 	public AccountSuccessPage successPage;
 	public NewsLetterpage newsLetterPage;
+	public LoginPage loginPage;
 
 	@BeforeClass
 	public void pageObjectSetup() {
-		home = new HomePage(DriverManager.getDriver());
+		home = new HomePage(DriverManager.getDriver(),wait);
 		myaccount = new MyAccountPage(DriverManager.getDriver(), wait);
 		register = new RegistrationPage(DriverManager.getDriver(), wait);
 		successPage = new AccountSuccessPage(DriverManager.getDriver(), wait);
 		newsLetterPage = new NewsLetterpage(DriverManager.getDriver(), wait);
+		loginPage = new LoginPage(DriverManager.getDriver(), wait);
 	}
 
 	@Test(groups = { "Sanity", "Smoke" }, priority = 1)
@@ -119,7 +118,7 @@ public class AccountRegisteration extends DriverSetup {
 		home.clickMyAccount();
 		home.clickRegister();
 		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
-		String actualUrlString =  DriverManager.getDriver().getCurrentUrl();
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
 		logger.info("Verify Resgistration URL ");
 		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
 
@@ -169,4 +168,77 @@ public class AccountRegisteration extends DriverSetup {
 
 	}
 
+	@Test(priority = 4)
+	public void navigateToDifferentWay() {
+		logger.info("Test Case 7");
+		home.clickMyAccount();
+		home.clickRegister();
+		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
+
+		home.clickMyAccount();
+		home.clickLogin();
+		String expectedLoginUrl = "https://tutorialsninja.com/demo/index.php?route=account/login";
+		String actualLoginUrl = DriverManager.getDriver().getCurrentUrl();
+		Assert.assertEquals(actualLoginUrl, expectedLoginUrl, "Login Page URL does not Match");
+
+		loginPage.clickContinueBtn();
+		String expectedRegisterUrl = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualRegisterUrl = DriverManager.getDriver().getCurrentUrl();
+		Assert.assertEquals(actualRegisterUrl, expectedRegisterUrl, "Register Page URL does not Match");
+
+		home.clickMyAccount();
+		home.clickLogin();
+		loginPage.clickRegisterLink();
+		String expectedRegisterUrl1 = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualRegisterUrl1 = DriverManager.getDriver().getCurrentUrl();
+		Assert.assertEquals(actualRegisterUrl1, expectedRegisterUrl1, "Register Page URL does not Match");
+
+		register.clickOnHomeIcon();
+		String currentUrl = DriverManager.getDriver().getCurrentUrl();
+		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
+		Assert.assertEquals(currentUrl, expectedHomeUrl, "Home Page is not opened");
+		logger.info("Register Page Navigation Test completed successfully");
+	}
+
+	@Test(priority = 5)
+	public void validateDifferentPassowrd() {
+		logger.info("Test Case 8");
+		home.clickMyAccount();
+		home.clickRegister();
+		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
+
+		register.enterFirstName(faker.name().firstName());
+		register.enterLastName(faker.name().lastName());
+		register.enterEmail(faker.internet().safeEmailAddress());
+		register.enterTephoneNumber(faker.phoneNumber().cellPhone());
+
+		String password = faker.internet().password(5, 10);
+		register.enterPassword(password);
+		register.enterCnfrmPassword(faker.internet().password(5, 12));
+		register.newsLetterYes();
+		register.clickPrivacyPolicycheckbox();
+		register.clickContnueBtn();
+
+		String actualRegisterURL = DriverManager.getDriver().getCurrentUrl();
+		String expectedRegisterURL = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		Assert.assertEquals(actualRegisterURL, expectedRegisterURL, "User is not on Register Page");
+
+		String actualCnfrmPasswordError = register.cnfrmPasswordWrngMsg();
+		String expectedCnfrmPasswordError = "Password confirmation does not match password!";
+		Assert.assertEquals(actualCnfrmPasswordError, expectedCnfrmPasswordError,
+				"Confirm Password Warning Message Does not Match");
+		logger.info("Confirm Password Warning Message validated successfully" + "Actual Message: "
+				+ actualCnfrmPasswordError + " Expected Message: " + expectedCnfrmPasswordError);
+		register.clickOnHomeIcon();
+		String currentUrl = DriverManager.getDriver().getCurrentUrl();
+		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
+		Assert.assertEquals(currentUrl, expectedHomeUrl, "Home Page is not opened");
+		logger.info("Continue Without Entering Confirm Password Test completed successfully");
+	}
 }
