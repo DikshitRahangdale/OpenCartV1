@@ -7,8 +7,8 @@
 		<classes>
 			<class name="testCases.AccountRegisteration">
 				<methods>
-					<include name="navigateToDifferentWay" />
-					<include name="validateDifferentPassowrd" />
+					<include name="RegisterwithExsisting" />
+
 				</methods>
 			</class>
 		</classes>

@@ -24,7 +24,7 @@ public class AccountRegisteration extends DriverSetup {
 
 	@BeforeClass
 	public void pageObjectSetup() {
-		home = new HomePage(DriverManager.getDriver(),wait);
+		home = new HomePage(DriverManager.getDriver(), wait);
 		myaccount = new MyAccountPage(DriverManager.getDriver(), wait);
 		register = new RegistrationPage(DriverManager.getDriver(), wait);
 		successPage = new AccountSuccessPage(DriverManager.getDriver(), wait);
@@ -240,5 +240,62 @@ public class AccountRegisteration extends DriverSetup {
 		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
 		Assert.assertEquals(currentUrl, expectedHomeUrl, "Home Page is not opened");
 		logger.info("Continue Without Entering Confirm Password Test completed successfully");
+	}
+
+	@Test(priority = 5)
+	public void RegisterwithExsisting() {
+		logger.info("Test Case 9");
+		home.clickMyAccount();
+		home.clickRegister();
+		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
+		String firstname = faker.name().firstName();
+		String lastName = faker.name().lastName();
+		String email = faker.internet().safeEmailAddress();
+		String phoneNumber = faker.phoneNumber().cellPhone();
+		String password = faker.internet().password(5, 10);
+          	
+		register.fillRegistrationForm(firstname, lastName, email, phoneNumber, password, password, "Yes");
+		register.clickPrivacyPolicycheckbox();
+		register.clickContnueBtn();
+		
+		String registerConfrmMsg = register.rgstrSuccessMsg();
+		logger.info("Registration confirmation message: " + registerConfrmMsg);
+
+		Assert.assertEquals(registerConfrmMsg, "Your Account Has Been Created!",
+				"Account is not Created or Success Message does not match");
+
+		home.clickMyAccount();
+		myaccount.clickLogout();
+		myaccount.clickOnlogoutcontBtns();
+		String currentUrl = DriverManager.getDriver().getCurrentUrl();
+		String expectedHomeUrl = "https://tutorialsninja.com/demo/index.php?route=common/home";
+
+		Assert.assertEquals(currentUrl, expectedHomeUrl,
+				"User was not logged out successfully or Home Page URL does not match");
+
+      
+		home.clickMyAccount();
+		home.clickRegister();
+		String expecetdUrlString1 = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString1 = DriverManager.getDriver().getCurrentUrl();
+		Assert.assertEquals(actualUrlString1, expecetdUrlString1, "Registration Page URL does not Match");
+		
+		register.fillRegistrationForm(firstname, lastName, email, phoneNumber, password, password, "Yes");
+		register.clickPrivacyPolicycheckbox();
+		register.clickContnueBtn();
+		
+		String actualRegisterURL = DriverManager.getDriver().getCurrentUrl();
+		String expectedRegisterURL = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		Assert.assertEquals(actualRegisterURL, expectedRegisterURL, "User is not on Register Page");
+		
+		String actualExtngWarnMsg=register.existingAcntWrnMsg();
+		String expectExtngWarnMsg="Warning: E-Mail Address is already registered!";
+		
+		Assert.assertEquals(actualExtngWarnMsg, expectExtngWarnMsg, "Exsting Account Warnign Message is not Matching");
+		register.clickOnHomeIcon();
+		logger.info("Create Account with Existing Account Datails Test completed successfully");
 	}
 }
