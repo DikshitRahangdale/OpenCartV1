@@ -72,6 +72,9 @@ public class RegistrationPage extends ConstructorBase {
 	@FindBy(css = ".fa-home")
 	WebElement homeIcon;
 
+	@FindBy(css = ".alert-dismissible")
+	WebElement existingaccountwarningMsg;
+
 	public RegistrationPage(WebDriver driver, WebDriverWait wait) {
 		super(driver); // call the base or parent class constructor
 		this.wait = wait;
@@ -184,4 +187,24 @@ public class RegistrationPage extends ConstructorBase {
 		clickContnueBtn();
 	}
 
+	public void fillRegistrationForm(String firstName, String lastName, String email, String phone, String password,
+			String confrPassword, String newletter) {
+
+		enterFirstName(firstName);
+		enterLastName(lastName);
+		enterEmail(email);
+		enterTephoneNumber(phone);
+		enterPassword(password);
+		enterCnfrmPassword(confrPassword);
+
+		if (newletter.equalsIgnoreCase("Yes")) {
+			newsLetterYes();
+		} else {
+			newsLetterNo();
+		}
+	}
+
+	public String existingAcntWrnMsg() {
+		return wait.until(ExpectedConditions.visibilityOf(existingaccountwarningMsg)).getText();
+	}
 }

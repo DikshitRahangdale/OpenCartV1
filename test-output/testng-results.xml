@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-05T20:40:05 IST" name="Suite" finished-at="2026-10-05T20:41:56 IST" duration-ms="110808">
+  <suite started-at="2026-10-06T20:52:54 IST" name="Suite" finished-at="2026-10-06T20:53:12 IST" duration-ms="17451">
     <groups>
-      <group name="Sanity">
-        <method signature="AccountRegisteration.registeration()[pri:1, instance:testCases.AccountRegisteration@3add81c4]" name="registeration" class="testCases.AccountRegisteration"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="LoginDataDrivenTest.loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" name="loginwithMultipledata" class="testCases.LoginDataDrivenTest"/>
-      </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="LoginDataDrivenTest.loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" name="loginwithMultipledata" class="testCases.LoginDataDrivenTest"/>
-        <method signature="MyLoginTest.veryLogin()[pri:0, instance:testCases.MyLoginTest@24528a25]" name="veryLogin" class="testCases.MyLoginTest"/>
-        <method signature="AccountRegisteration.registeration()[pri:1, instance:testCases.AccountRegisteration@3add81c4]" name="registeration" class="testCases.AccountRegisteration"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-10-05T20:40:05 IST" name="TestChrome" finished-at="2026-10-05T20:41:56 IST" duration-ms="110808">
+    <test started-at="2026-10-06T20:52:54 IST" name="Test" finished-at="2026-10-06T20:53:12 IST" duration-ms="17451">
       <class name="testCases.AccountRegisteration">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:06 IST" name="driversetup" finished-at="2026-10-05T20:40:16 IST" duration-ms="9736" status="PASS">
+        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountRegisteration@e27ba81]" started-at="2026-10-06T20:52:54 IST" name="driversetup" finished-at="2026-10-06T20:53:04 IST" duration-ms="9402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,227 +23,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetup -->
-        <test-method is-config="true" signature="pageObjectSetup()[pri:0, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:16 IST" name="pageObjectSetup" finished-at="2026-10-05T20:40:16 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="pageObjectSetup()[pri:0, instance:testCases.AccountRegisteration@e27ba81]" started-at="2026-10-06T20:53:04 IST" name="pageObjectSetup" finished-at="2026-10-06T20:53:04 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObjectSetup -->
-        <test-method signature="registeration()[pri:1, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:16 IST" name="registeration" finished-at="2026-10-05T20:40:21 IST" duration-ms="5267" status="PASS">
+        <test-method signature="RegisterwithExsisting()[pri:5, instance:testCases.AccountRegisteration@e27ba81]" started-at="2026-10-06T20:53:04 IST" name="RegisterwithExsisting" finished-at="2026-10-06T20:53:11 IST" duration-ms="7272" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registeration -->
-        <test-method signature="providingOnlyMandatoryField()[pri:2, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:21 IST" name="providingOnlyMandatoryField" finished-at="2026-10-05T20:40:23 IST" duration-ms="2076" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- providingOnlyMandatoryField -->
-        <test-method signature="validationtNewsLetterStatus(java.lang.String)[pri:3, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:23 IST" name="validationtNewsLetterStatus" data-provider="Status" finished-at="2026-10-05T20:40:27 IST" duration-ms="3887" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validationtNewsLetterStatus -->
-        <test-method signature="validationtNewsLetterStatus(java.lang.String)[pri:3, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:27 IST" name="validationtNewsLetterStatus" data-provider="Status" finished-at="2026-10-05T20:40:32 IST" duration-ms="4270" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validationtNewsLetterStatus -->
-        <test-method signature="navigateToDifferentWay()[pri:4, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:32 IST" name="navigateToDifferentWay" finished-at="2026-10-05T20:40:34 IST" duration-ms="2312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToDifferentWay -->
-        <test-method signature="validateDifferentPassowrd()[pri:5, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:34 IST" name="validateDifferentPassowrd" finished-at="2026-10-05T20:40:36 IST" duration-ms="2464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDifferentPassowrd -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.AccountRegisteration@3add81c4]" started-at="2026-10-05T20:40:36 IST" name="closeDriver" finished-at="2026-10-05T20:40:37 IST" duration-ms="662" status="PASS">
+        </test-method> <!-- RegisterwithExsisting -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.AccountRegisteration@e27ba81]" started-at="2026-10-06T20:53:11 IST" name="closeDriver" finished-at="2026-10-06T20:53:12 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- testCases.AccountRegisteration -->
-      <class name="testCases.LoginDataDrivenTest">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:40:43 IST" name="driversetup" finished-at="2026-10-05T20:40:47 IST" duration-ms="3947" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Linux]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driversetup -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:40:52 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-10-05T20:41:05 IST" duration-ms="13197" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[john.doe@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:41:05 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-10-05T20:41:18 IST" duration-ms="12844" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[alice.smith@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Alice@456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:41:18 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-10-05T20:41:30 IST" duration-ms="11907" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[robert.johnson@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Robert@789]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:41:30 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-10-05T20:41:32 IST" duration-ms="2846" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pofoye5680@apdtax.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:41:32 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-10-05T20:41:44 IST" duration-ms="11729" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[emma.wilson@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Emma@321]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method signature="loginwithMultipledata(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:41:44 IST" name="loginwithMultipledata" data-provider="LoginData" finished-at="2026-10-05T20:41:56 IST" duration-ms="11559" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[michael.brown@testmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Michael@654]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginwithMultipledata -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.LoginDataDrivenTest@17ae98d7]" started-at="2026-10-05T20:41:56 IST" name="closeDriver" finished-at="2026-10-05T20:41:56 IST" duration-ms="484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.LoginDataDrivenTest -->
-      <class name="testCases.MyLoginTest">
-        <test-method is-config="true" signature="driversetup(java.lang.String,java.lang.String)[pri:0, instance:testCases.MyLoginTest@24528a25]" started-at="2026-10-05T20:40:37 IST" name="driversetup" finished-at="2026-10-05T20:40:41 IST" duration-ms="3515" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Linux]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driversetup -->
-        <test-method signature="veryLogin()[pri:0, instance:testCases.MyLoginTest@24528a25]" started-at="2026-10-05T20:40:41 IST" name="veryLogin" finished-at="2026-10-05T20:40:42 IST" duration-ms="1853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- veryLogin -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.MyLoginTest@24528a25]" started-at="2026-10-05T20:40:42 IST" name="closeDriver" finished-at="2026-10-05T20:40:43 IST" duration-ms="604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.MyLoginTest -->
-    </test> <!-- TestChrome -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
