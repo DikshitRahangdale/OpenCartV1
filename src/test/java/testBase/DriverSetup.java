@@ -45,7 +45,8 @@ public class DriverSetup {
 
 		faker = new Faker();
 
-		String huburl = "http://localhost:4444";
+		 String huburl = "http://localhost:4444";
+		//String huburl = "http://192.168.0.209:4444";
 
 		FileReader fileReader = new FileReader("./src//test//resources//config.properties");
 		pr = new Properties();
