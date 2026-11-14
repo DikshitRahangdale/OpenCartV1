@@ -1,0 +1,294 @@
+2026-10-23 22:12:54 [TestNG-tests-1] INFO  MyLoginTest - Login Test Start
+2026-10-23 22:12:56 [TestNG-tests-3] INFO  MyLoginTest - Login Test Start
+2026-10-23 22:12:59 [TestNG-tests-3] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-10-23 22:13:01 [TestNG-tests-1] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-10-23 22:13:06 [TestNG-tests-2] INFO  MyLoginTest - Login Test Start
+2026-10-23 22:13:08 [TestNG-tests-2] INFO  MyLoginTest - My Accoutn Page is Opening
+2026-10-23 22:13:09 [TestNG-tests-3] INFO  AccountRegisteration - Test Case 1
+2026-10-23 22:13:10 [TestNG-tests-3] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:18 [TestNG-tests-1] INFO  AccountRegisteration - Test Case 1
+2026-10-23 22:13:18 [TestNG-tests-3] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:20 [TestNG-tests-1] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:21 [TestNG-tests-3] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-23 22:13:22 [TestNG-tests-3] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:23 [TestNG-tests-3] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-23 22:13:24 [TestNG-tests-1] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:24 [TestNG-tests-3] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-23 22:13:24 [TestNG-tests-3] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-23 22:13:24 [TestNG-tests-3] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-23 22:13:24 [TestNG-tests-3] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-23 22:13:24 [TestNG-tests-3] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-23 22:13:24 [TestNG-tests-3] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-23 22:13:25 [TestNG-tests-2] INFO  AccountRegisteration - Test Case 1
+2026-10-23 22:13:25 [TestNG-tests-3] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-23 22:13:26 [TestNG-tests-3] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:26 [TestNG-tests-1] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-23 22:13:27 [TestNG-tests-1] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:28 [TestNG-tests-2] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:28 [TestNG-tests-1] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-23 22:13:28 [TestNG-tests-1] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-23 22:13:28 [TestNG-tests-1] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-23 22:13:29 [TestNG-tests-1] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-23 22:13:29 [TestNG-tests-1] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-23 22:13:29 [TestNG-tests-1] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-23 22:13:29 [TestNG-tests-1] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-23 22:13:29 [TestNG-tests-1] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-23 22:13:31 [TestNG-tests-1] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:32 [TestNG-tests-3] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:32 [TestNG-tests-2] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:33 [TestNG-tests-3] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-23 22:13:33 [TestNG-tests-2] INFO  AccountRegisteration - *****Test Case 4**
+2026-10-23 22:13:34 [TestNG-tests-1] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:35 [TestNG-tests-2] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:36 [TestNG-tests-3] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-23 22:13:36 [TestNG-tests-3] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-23 22:13:36 [TestNG-tests-2] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-10-23 22:13:36 [TestNG-tests-1] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-23 22:13:36 [TestNG-tests-2] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-10-23 22:13:36 [TestNG-tests-2] INFO  AccountRegisteration - Validating the Email warning message
+2026-10-23 22:13:36 [TestNG-tests-2] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-10-23 22:13:36 [TestNG-tests-2] INFO  AccountRegisteration - Validating the Password warning message
+2026-10-23 22:13:37 [TestNG-tests-2] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-10-23 22:13:37 [TestNG-tests-2] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-10-23 22:13:37 [TestNG-tests-3] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:37 [TestNG-tests-2] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-23 22:13:38 [TestNG-tests-1] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-23 22:13:38 [TestNG-tests-1] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-23 22:13:39 [TestNG-tests-2] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:39 [TestNG-tests-1] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:42 [TestNG-tests-2] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:42 [TestNG-tests-3] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:43 [TestNG-tests-1] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:43 [TestNG-tests-2] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-10-23 22:13:45 [TestNG-tests-3] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-23 22:13:45 [TestNG-tests-1] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-23 22:13:45 [TestNG-tests-2] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-10-23 22:13:45 [TestNG-tests-2] INFO  AccountRegisteration - Test Case 5 & 6
+2026-10-23 22:13:46 [TestNG-tests-2] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:47 [TestNG-tests-1] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-10-23 22:13:47 [TestNG-tests-1] INFO  AccountRegisteration - Test Case 7
+2026-10-23 22:13:48 [TestNG-tests-1] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:48 [TestNG-tests-3] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-10-23 22:13:48 [TestNG-tests-3] INFO  AccountRegisteration - Test Case 7
+2026-10-23 22:13:49 [TestNG-tests-3] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:50 [TestNG-tests-2] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:53 [TestNG-tests-1] INFO  AccountRegisteration - Register Page Navigation Test completed successfully
+2026-10-23 22:13:53 [TestNG-tests-1] INFO  AccountRegisteration - Test Case 9
+2026-10-23 22:13:53 [TestNG-tests-2] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-10-23 22:13:53 [TestNG-tests-1] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:54 [TestNG-tests-2] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-10-23 22:13:54 [TestNG-tests-2] INFO  AccountRegisteration - Test Case 7
+2026-10-23 22:13:54 [TestNG-tests-3] INFO  AccountRegisteration - Register Page Navigation Test completed successfully
+2026-10-23 22:13:54 [TestNG-tests-3] INFO  AccountRegisteration - Test Case 9
+2026-10-23 22:13:55 [TestNG-tests-2] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:55 [TestNG-tests-3] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:13:57 [TestNG-tests-1] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:13:59 [TestNG-tests-2] INFO  AccountRegisteration - Register Page Navigation Test completed successfully
+2026-10-23 22:13:59 [TestNG-tests-2] INFO  AccountRegisteration - Test Case 9
+2026-10-23 22:14:00 [TestNG-tests-2] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:14:03 [TestNG-tests-2] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:14:04 [TestNG-tests-1] INFO  AccountRegisteration - Create Account with Existing Account Datails Test completed successfully
+2026-10-23 22:14:04 [TestNG-tests-1] INFO  AccountRegisteration - Test Case 8
+2026-10-23 22:14:05 [TestNG-tests-3] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-10-23 22:14:06 [TestNG-tests-1] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:14:09 [TestNG-tests-2] INFO  AccountRegisteration - Create Account with Existing Account Datails Test completed successfully
+2026-10-23 22:14:09 [TestNG-tests-2] INFO  AccountRegisteration - Test Case 8
+2026-10-23 22:14:09 [TestNG-tests-1] INFO  AccountRegisteration - Confirm Password Warning Message validated successfullyActual Message: Password confirmation does not match password! Expected Message: Password confirmation does not match password!
+2026-10-23 22:14:10 [TestNG-tests-1] INFO  AccountRegisteration - Continue Without Entering Confirm Password Test completed successfully
+2026-10-23 22:14:10 [TestNG-tests-2] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:14:12 [TestNG-tests-2] INFO  AccountRegisteration - Confirm Password Warning Message validated successfullyActual Message: Password confirmation does not match password! Expected Message: Password confirmation does not match password!
+2026-10-23 22:14:13 [TestNG-tests-2] INFO  AccountRegisteration - Continue Without Entering Confirm Password Test completed successfully
+2026-10-23 22:14:14 [TestNG-tests-3] INFO  AccountRegisteration - Create Account with Existing Account Datails Test completed successfully
+2026-10-23 22:14:14 [TestNG-tests-3] INFO  AccountRegisteration - Test Case 8
+2026-10-23 22:14:14 [TestNG-tests-3] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-10-23 22:14:16 [TestNG-tests-3] INFO  AccountRegisteration - Confirm Password Warning Message validated successfullyActual Message: Password confirmation does not match password! Expected Message: Password confirmation does not match password!
+2026-10-23 22:14:16 [TestNG-tests-3] INFO  AccountRegisteration - Continue Without Entering Confirm Password Test completed successfully
+2026-11-13 18:20:18 [main] INFO  AccountRegisteration - Test Case 9
+2026-11-13 18:23:46 [main] INFO  AccountRegisteration - Test Case 1
+2026-11-13 18:23:46 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:23:50 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:23:51 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-11-13 18:23:51 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:23:51 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-11-13 18:23:52 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-11-13 18:23:52 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-11-13 18:23:52 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-11-13 18:23:52 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-11-13 18:23:52 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-11-13 18:23:52 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-11-13 18:23:53 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 18:23:53 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:23:55 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:23:57 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-11-13 18:23:59 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-11-13 18:23:59 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 18:23:59 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:24:03 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:24:03 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-11-13 18:24:04 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-11-13 18:24:04 [main] INFO  AccountRegisteration - Test Case 7
+2026-11-13 18:24:05 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:24:07 [main] INFO  AccountRegisteration - Register Page Navigation Test completed successfully
+2026-11-13 18:24:07 [main] INFO  AccountRegisteration - Test Case 9
+2026-11-13 18:24:07 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:24:09 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:24:12 [main] INFO  AccountRegisteration - Create Account with Existing Account Datails Test completed successfully
+2026-11-13 18:24:12 [main] INFO  AccountRegisteration - Test Case 8
+2026-11-13 18:24:12 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:24:14 [main] INFO  AccountRegisteration - Confirm Password Warning Message validated successfullyActual Message: Password confirmation does not match password! Expected Message: Password confirmation does not match password!
+2026-11-13 18:24:14 [main] INFO  AccountRegisteration - Continue Without Entering Confirm Password Test completed successfully
+2026-11-13 18:27:34 [main] INFO  AccountRegisteration - Test Case 1
+2026-11-13 18:27:35 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:27:38 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:27:39 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-11-13 18:27:40 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:27:40 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-11-13 18:27:41 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-11-13 18:27:41 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-11-13 18:27:41 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-11-13 18:27:41 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-11-13 18:27:41 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-11-13 18:27:41 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-11-13 18:27:42 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 18:27:43 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:27:46 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:27:47 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-11-13 18:27:49 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-11-13 18:27:49 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 18:27:50 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:27:53 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:27:54 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-11-13 18:27:55 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-11-13 18:27:55 [main] INFO  AccountRegisteration - Test Case 7
+2026-11-13 18:27:56 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:03 [main] INFO  AccountRegisteration - Register Page Navigation Test completed successfully
+2026-11-13 18:28:03 [main] INFO  AccountRegisteration - Test Case 9
+2026-11-13 18:28:03 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:07 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 18:28:12 [main] INFO  AccountRegisteration - Create Account with Existing Account Datails Test completed successfully
+2026-11-13 18:28:12 [main] INFO  AccountRegisteration - Test Case 8
+2026-11-13 18:28:14 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:16 [main] INFO  AccountRegisteration - Confirm Password Warning Message validated successfullyActual Message: Password confirmation does not match password! Expected Message: Password confirmation does not match password!
+2026-11-13 18:28:16 [main] INFO  AccountRegisteration - Continue Without Entering Confirm Password Test completed successfully
+2026-11-13 18:28:16 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 18:28:17 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:18 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:18 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 18:28:19 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:20 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:21 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 18:28:21 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:22 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:23 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 18:28:23 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 18:28:24 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:06:23 [main] INFO  AccountRegisteration - Test Case 1
+2026-11-13 19:06:31 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:06:37 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:06:38 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-11-13 19:06:39 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:06:40 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-11-13 19:06:40 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-11-13 19:06:40 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-11-13 19:06:40 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-11-13 19:06:40 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-11-13 19:06:40 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-11-13 19:06:40 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-11-13 19:06:41 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 19:06:41 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:06:44 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:06:45 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-11-13 19:06:49 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-11-13 19:06:49 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 19:06:49 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:06:54 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:06:55 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-11-13 19:06:58 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-11-13 19:06:58 [main] INFO  AccountRegisteration - Test Case 7
+2026-11-13 19:06:58 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:02 [main] INFO  AccountRegisteration - Register Page Navigation Test completed successfully
+2026-11-13 19:07:02 [main] INFO  AccountRegisteration - Test Case 9
+2026-11-13 19:07:04 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:08 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:07:19 [main] INFO  AccountRegisteration - Create Account with Existing Account Datails Test completed successfully
+2026-11-13 19:07:19 [main] INFO  AccountRegisteration - Test Case 8
+2026-11-13 19:07:19 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:21 [main] INFO  AccountRegisteration - Confirm Password Warning Message validated successfullyActual Message: Password confirmation does not match password! Expected Message: Password confirmation does not match password!
+2026-11-13 19:07:22 [main] INFO  AccountRegisteration - Continue Without Entering Confirm Password Test completed successfully
+2026-11-13 19:07:22 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:07:22 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:24 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:24 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:07:25 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:26 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:26 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:07:27 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:28 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:29 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:07:29 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:31 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:32 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:07:32 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:35 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:35 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:07:36 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:38 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:07:39 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:07:50 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:08:01 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:21:32 [main] INFO  AccountRegisteration - Test Case 1
+2026-11-13 19:21:34 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:21:39 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:21:40 [main] INFO  AccountRegisteration - *****Test Case 4**
+2026-11-13 19:21:40 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - Validating the First NAme warning message
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - Validating the Last NAme warning message
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - Validating the Email warning message
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - Validating the TelePhone NUmber warning message
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - Validating the Password warning message
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - Validating the Privacy Policy warning message
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - *****Test Case 4 Pass**
+2026-11-13 19:21:42 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 19:21:43 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:21:46 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:21:47 [main] INFO  AccountRegisteration - Newsletter Yes validation completed successfully
+2026-11-13 19:21:48 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: Yes
+2026-11-13 19:21:48 [main] INFO  AccountRegisteration - Test Case 5 & 6
+2026-11-13 19:21:48 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:21:51 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:21:52 [main] INFO  AccountRegisteration - Newsletter No validation completed successfully
+2026-11-13 19:21:53 [main] INFO  AccountRegisteration - Newsletter test completed successfully for status: No
+2026-11-13 19:21:53 [main] INFO  AccountRegisteration - Test Case 7
+2026-11-13 19:21:53 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:21:55 [main] INFO  AccountRegisteration - Register Page Navigation Test completed successfully
+2026-11-13 19:21:55 [main] INFO  AccountRegisteration - Test Case 9
+2026-11-13 19:21:56 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:21:58 [main] INFO  AccountRegisteration - Registration confirmation message: Your Account Has Been Created!
+2026-11-13 19:22:02 [main] INFO  AccountRegisteration - Create Account with Existing Account Datails Test completed successfully
+2026-11-13 19:22:02 [main] INFO  AccountRegisteration - Test Case 8
+2026-11-13 19:22:02 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:03 [main] INFO  AccountRegisteration - Confirm Password Warning Message validated successfullyActual Message: Password confirmation does not match password! Expected Message: Password confirmation does not match password!
+2026-11-13 19:22:04 [main] INFO  AccountRegisteration - Continue Without Entering Confirm Password Test completed successfully
+2026-11-13 19:22:04 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:22:04 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:05 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:05 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:22:06 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:07 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:07 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:22:07 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:09 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:09 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:22:10 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:10 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:11 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:22:11 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:13 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:33 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:22:34 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:36 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:57 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:22:58 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:22:59 [main] INFO  AccountRegisteration - Verify Resgistration URL 
+2026-11-13 19:23:00 [main] INFO  AccountRegisteration - Test Case 10
+2026-11-13 19:23:10 [main] INFO  AccountRegisteration - Test Case 10

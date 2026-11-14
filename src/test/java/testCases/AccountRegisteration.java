@@ -2,6 +2,7 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import pageObjects.AccountSuccessPage;
@@ -256,11 +257,11 @@ public class AccountRegisteration extends DriverSetup {
 		String email = faker.internet().safeEmailAddress();
 		String phoneNumber = faker.phoneNumber().cellPhone();
 		String password = faker.internet().password(5, 10);
-          	
+
 		register.fillRegistrationForm(firstname, lastName, email, phoneNumber, password, password, "Yes");
 		register.clickPrivacyPolicycheckbox();
 		register.clickContnueBtn();
-		
+
 		String registerConfrmMsg = register.rgstrSuccessMsg();
 		logger.info("Registration confirmation message: " + registerConfrmMsg);
 
@@ -276,26 +277,93 @@ public class AccountRegisteration extends DriverSetup {
 		Assert.assertEquals(currentUrl, expectedHomeUrl,
 				"User was not logged out successfully or Home Page URL does not match");
 
-      
 		home.clickMyAccount();
 		home.clickRegister();
 		String expecetdUrlString1 = "https://tutorialsninja.com/demo/index.php?route=account/register";
 		String actualUrlString1 = DriverManager.getDriver().getCurrentUrl();
 		Assert.assertEquals(actualUrlString1, expecetdUrlString1, "Registration Page URL does not Match");
-		
+
 		register.fillRegistrationForm(firstname, lastName, email, phoneNumber, password, password, "Yes");
 		register.clickPrivacyPolicycheckbox();
 		register.clickContnueBtn();
-		
+
 		String actualRegisterURL = DriverManager.getDriver().getCurrentUrl();
 		String expectedRegisterURL = "https://tutorialsninja.com/demo/index.php?route=account/register";
 		Assert.assertEquals(actualRegisterURL, expectedRegisterURL, "User is not on Register Page");
-		
-		String actualExtngWarnMsg=register.existingAcntWrnMsg();
-		String expectExtngWarnMsg="Warning: E-Mail Address is already registered!";
-		
+
+		String actualExtngWarnMsg = register.existingAcntWrnMsg();
+		String expectExtngWarnMsg = "Warning: E-Mail Address is already registered!";
+
 		Assert.assertEquals(actualExtngWarnMsg, expectExtngWarnMsg, "Exsting Account Warnign Message is not Matching");
 		register.clickOnHomeIcon();
 		logger.info("Create Account with Existing Account Datails Test completed successfully");
+	}
+
+	@Test(priority = 6, dataProviderClass = DataProviders.class, dataProvider = "Email")
+	public void registrationwithInvldEmail(String emails) {
+		logger.info("Test Case 10");
+		home.clickMyAccount();
+		home.clickRegister();
+		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
+		String firstname = faker.name().firstName();
+		String lastName = faker.name().lastName();
+		String phoneNumber = faker.phoneNumber().cellPhone();
+		String password = faker.internet().password(5, 10);
+		String email = emails;
+		register.fillRegistrationForm(firstname, lastName, email, phoneNumber, password, password, "Yes");
+		register.clickPrivacyPolicycheckbox();
+		register.clickContnueBtn();
+
+		String expecetdUrlString1 = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString1 = DriverManager.getDriver().getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		Assert.assertEquals(actualUrlString1, expecetdUrlString1,
+				"Registration Page URL does not Match means user is created with invalid email");
+		String emailwarningMsg = (String) js.executeScript("return arguments[0].validationMessage;", email);
+		home.clickMyAccount();
+		home.clickRegister();
+
+	}
+    //Bug
+	@Ignore
+	@Test(priority = 7, dataProviderClass = DataProviders.class, dataProvider = "Phones")
+	public void registrationwithInvldPhone(String phones) {
+		logger.info("Test Case 10");
+		home.clickMyAccount();
+		home.clickRegister();
+		String expecetdUrlString = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString = DriverManager.getDriver().getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		Assert.assertEquals(actualUrlString, expecetdUrlString, "Registration Page URL does not Match");
+		String firstname = faker.name().firstName();
+		String lastName = faker.name().lastName();
+		String phoneNumber = phones;
+		String password = faker.internet().password(5, 10);
+		String email = faker.internet().safeEmailAddress();
+		register.fillRegistrationForm(firstname, lastName, email, phoneNumber, password, password, "Yes");
+		register.clickPrivacyPolicycheckbox();
+		register.clickContnueBtn();
+
+		String expecetdUrlString1 = "https://tutorialsninja.com/demo/index.php?route=account/register";
+		String actualUrlString1 = DriverManager.getDriver().getCurrentUrl();
+		logger.info("Verify Resgistration URL ");
+		if (expecetdUrlString1.equals(actualUrlString1)) {
+			home.clickMyAccount();
+			home.clickRegister();
+		} else {
+			softassert.assertEquals(actualUrlString1, expecetdUrlString1,
+					"Registration Page URL does not Match means user is created with invalid Phones:- Test Case Faile for " + phones+" Number");
+			home.clickMyAccount();
+			myaccount.clickLogout();
+			myaccount.clickOnlogoutcontBtns();
+
+		}
+
+		softassert.assertNotNull(register.telePhoneWarnMsg(),
+				"Warning Message is not Appears for Invalid Phone Number");
+
 	}
 }

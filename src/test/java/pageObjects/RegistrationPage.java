@@ -22,7 +22,7 @@ public class RegistrationPage extends ConstructorBase {
 	WebElement lastName;
 
 	@FindBy(id = "input-email")
-	WebElement emailinput;
+	public WebElement emailinput;
 
 	@FindBy(id = "input-telephone")
 	WebElement telephoneInput;

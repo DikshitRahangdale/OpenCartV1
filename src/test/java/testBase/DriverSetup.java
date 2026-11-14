@@ -12,6 +12,7 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -28,6 +29,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
 
@@ -38,6 +40,8 @@ public class DriverSetup {
 	public WebDriverWait wait;
 	public MutableCapabilities options; // MutableCapabilities is a parent class for browser-specific option classes
 	public Faker faker;
+	public JavascriptExecutor js;
+	public SoftAssert softassert;
 
 	@BeforeClass(groups = { "Smoke", "Sanity", "Regression" })
 	@Parameters({ "browsers", "os" })
@@ -45,8 +49,8 @@ public class DriverSetup {
 
 		faker = new Faker();
 
-		 String huburl = "http://localhost:4444";
-		//String huburl = "http://192.168.0.209:4444";
+		String huburl = "http://localhost:4444";
+		// String huburl = "http://192.168.0.209:4444";
 
 		FileReader fileReader = new FileReader("./src//test//resources//config.properties");
 		pr = new Properties();
@@ -121,13 +125,15 @@ public class DriverSetup {
 		DriverManager.getDriver().manage().deleteAllCookies();
 		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
+		js = (JavascriptExecutor) DriverManager.getDriver();
+		softassert = new SoftAssert();
 		DriverManager.getDriver().get(pr.getProperty("appUrl")); // reading URL from properties file
 	}
 
 	@AfterClass(groups = { "Smoke", "Sanity", "Regression" })
 	public void closeDriver() {
 		if (DriverManager.getDriver() != null) {
-
+			softassert.assertAll();
 			DriverManager.getDriver().quit();
 
 			DriverManager.unload();

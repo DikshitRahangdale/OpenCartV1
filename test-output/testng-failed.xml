@@ -8,29 +8,14 @@
     <parameter name="os" value="Linux"/>
     <parameter name="browsers" value="Chrome"/>
     <classes>
-      <class name="testCases.MyLoginTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="veryLogin"/>
-          <include name="driversetup"/>
-        </methods>
-      </class> <!-- testCases.MyLoginTest -->
       <class name="testCases.AccountRegisteration">
         <methods>
-          <include name="validateDifferentPassowrd"/>
           <include name="pageObjectSetup"/>
           <include name="closeDriver"/>
-          <include name="navigateToDifferentWay"/>
           <include name="driversetup"/>
+          <include name="registrationwithInvldPhone" invocation-numbers="0 1 2 3 4"/>
         </methods>
       </class> <!-- testCases.AccountRegisteration -->
-      <class name="testCases.LoginDataDrivenTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="loginwithMultipledata" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="driversetup"/>
-        </methods>
-      </class> <!-- testCases.LoginDataDrivenTest -->
     </classes>
   </test> <!-- TestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

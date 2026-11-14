@@ -5,10 +5,17 @@
     <classes>
       <class name="testCases.AccountRegisteration">
         <methods>
+          <include name="validateDifferentPassowrd"/>
+          <include name="validationtNewsLetterStatus"/>
+          <include name="providingOnlyMandatoryField"/>
           <include name="pageObjectSetup"/>
           <include name="closeDriver"/>
+          <include name="navigateToDifferentWay"/>
+          <include name="registeration"/>
+          <include name="registrationwithInvldEmail"/>
+          <include name="RegisterwithExsisting"/>
           <include name="driversetup"/>
-          <include name="validatingRegswithYes"/>
+          <include name="registrationwithInvldPhone"/>
         </methods>
       </class> <!-- testCases.AccountRegisteration -->
     </classes>
