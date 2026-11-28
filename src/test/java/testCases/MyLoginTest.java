@@ -10,7 +10,7 @@ import testBase.DriverManager;
 import testBase.DriverSetup;
 
 public class MyLoginTest extends DriverSetup {
-
+//Test
 	@Test(groups = "Smoke")
 	public void veryLogin() {
 
